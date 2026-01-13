@@ -1,0 +1,189 @@
+#JUDGE
+A Java class can extend from multiple base classes.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+Without extends keyword in the declaration of a class, that class is inherited from Object
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Multiple inheritances from classes is not allowed in Java.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+protected can be used to prevent methods and data been accessed from non-derived classes.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#CHOICE
+Which one below is a feature of Java?
+#OPTIONS
+Multi-inheritance
+Virtual inheritance
+Generic programming
+Operator overloading
+#CORRECT
+3
+#END
+
+#CHOICE
+    class DataServer extends Server {
+        public String serverName;
+        public DataServer() {
+            serverName = "Customer Service";
+            super(serverName);
+        }
+    }
+Which statement is right?
+#OPTIONS
+Code can pass the compilation
+Code can pass the compilation but a fault would happen in creating object of DataServer
+Code can NOT pass the compilation for the error in the 2nd line
+Code can NOT pass the compilation for the error in the 5th line
+#CORRECT
+4
+#END
+#CHOICE
+If a method defined in a derived class has the same name, return type and parameters with the base one, we call this situation as: (  )
+#OPTIONS
+overload
+override
+inheritance
+construction
+#CORRECT
+2
+#END
+
+#CHOICE
+What will happen if you try to compile and execute B's main() method? (  )
+    class A {
+        int i;
+        A(int i) {    this.i = i * 2;    }
+    }
+    class B extends A {
+        public static void main(String[] args) {
+            B b = new B(2);
+        }
+        B(int x) {
+            System.out.println(x);
+        }
+    }
+#OPTIONS
+The instance variable i is set to 4
+The instance variable i is set to 2
+The instance variable i is set to 0
+This code will not compile
+#CORRECT
+4
+#END
+
+#CHOICE
+About the Java language, which statement below is NOT correct?
+#OPTIONS
+A variable of byte type occupies one byte
+A class can implement more than one interface
+A class can inherit from more than one super class
+All arrays are to be created dynamically.
+#CORRECT
+3
+#END
+
+#CHOICE
+Given the following code how could you invoke the Base constructor that will print out the string "base constructor";
+    class Base{
+        Base(int i){ System.out.println("base constructor");     }
+    }
+    public class BaseSup extends Base{
+        public static void main(String argv[]){
+            BaseSup s= new BaseSup();
+            //One
+        }
+        BaseSup(){
+            //Two
+        }
+    }
+#OPTIONS
+At the line after //One put Base(10);
+At the line after //One put super(10);
+At the line After //Two put super(10);
+At the line After //Two put this (10);
+#CORRECT
+3
+#END
+
+#CHOICE
+    class A {
+        private int i = baz();
+        public int baz() {
+            System.out.print("A");
+            return 0;
+        }
+    }
+    class B extends A {
+        private int i = baz();
+        public int baz() {
+            System.out.print("B");
+            return 10;
+        }
+        public static void main(String[] args) {
+            A a = new B();
+        }
+    }
+What will happen when you compile and run this program?
+#OPTIONS
+The program compiles, runs, and output AB.
+The program compiles, runs, and output BB.
+The program compiles, runs, and output AA.
+The program does not compile.
+#CORRECT
+2
+#END
+
+#CHOICE
+What will happen when you attempt to compile and run this code?
+    abstract class Base{
+        abstract public void myfunc();
+        public void another(){
+            System.out.println("Another method");
+        }
+    }
+    public class Abs extends Base{
+        public static void main(String argv[]){
+            Abs a = new Abs();
+            a.amethod();
+        }
+        public void myfunc(){
+                System.out.println("My Func");
+        }
+        public void amethod(){
+            myfunc();
+        }
+    }
+#OPTIONS
+The code will compile and run, printing out the words "My Func"
+The compiler will complain that the Base class has non abstract methods
+The code will compile but complain at run time that the Base class has non abstract methods
+The compiler will complain that the method myfunc in the base class has no body, nobody at all to looove it
+#CORRECT
+1
+#END
+

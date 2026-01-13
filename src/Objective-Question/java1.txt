@@ -1,0 +1,219 @@
+#JUDGE
+Java的字符类型采用的是Unicode编码，每个Unicode码占16个比特。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Java的各种数据类型占用固定长度，与具体的软硬件平台环境无关。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+对象是类的实例（instance）。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Java is a type-safe language.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Compiled Java program can be executed in any operating systems directly.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+设String对象s="Hello "，运行语句System.out.println(s.concat("world!"));后String对象s的内容为Hello world!，所以语句输出为Hello world!
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+The replace() method can change a String's content.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+String实例一旦创建完毕，就不能再修改其内容。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+String对象和StringBuffer对象都是字符串类型，创建后的对象都可以在原地进行修改。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+Java的String类中有追加方法append()
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#CHOICE
+About Java, which statement below is NOT correct?
+#OPTIONS
+The size of int type varies from platform to platform.
+The size of int type is always 4 bytes among all the platforms.
+The size of char type is Unicode coded.
+A value of char type can be transformed to a value of int.
+#CORRECT
+1
+#END
+
+#CHOICE
+Which line of code will create a new string in the string pool that can be referenced by the identifier myGame?
+#OPTIONS
+String myGame = "basketball";
+String myGame = new String("basketball");
+String "basketball";
+String[] myGame = new String("basketball");
+#CORRECT
+1
+#END
+
+#CHOICE
+For code below, the result would be?
+    String s = "Welcome to Zhejiang University";
+    String[] a = s.split(" ");
+    System.out.println(a.length);
+#OPTIONS
+4
+3
+Compile error
+Run-time exception
+#CORRECT
+1
+#END
+
+#CHOICE
+About String in Java, which statement below is NOT correct?
+#OPTIONS
+A String object is immutable.
+A String object can be initialized using the = operator with a string literal.
+Class Object defines toString() function to generate a String represents the object.
+A String object can be altered using the = operator with a string literal.
+#CORRECT
+4
+#END
+
+#CHOICE
+What is the value of s2 after this code executes?
+    String s1 = "Happy#day";
+    String s2 = s1.substring(1,5);
+#OPTIONS
+"Happ"
+"Happy"
+"appy"
+"appy#"
+#CORRECT
+3
+#END
+
+#CHOICE
+Which of the following statements is NOT true?
+#OPTIONS
+Strings can be initialized using the = operator with a string literal value.
+The toString() method can be used to return a String value from an object of any class.
+All strings are terminated with a null (‘\0’) character.
+It is impossible to change the contents of a String object.
+#CORRECT
+3
+#END
+
+#CHOICE
+Java应用程序的main方法中有以下语句序列，则运行后输出的结果是？
+    String s="12345#aaa#bbb#67890";
+    int n=s.indexOf("#");
+    int k=s.indexOf("#",n+1);
+    int m=s.indexOf("#",k+1);
+    String s2=s.substring(m+1);
+    System.out.println(s2);
+#OPTIONS
+123456
+67890
+aaa
+bbb
+#CORRECT
+2
+#END
+
+#CHOICE
+Java中，那个方法是StringBuffer类和String类共有的。
+#OPTIONS
+append()
+reverse()
+replace()
+insert()
+#CORRECT
+3
+#END
+
+#CHOICE
+Java中，以下关于String字符串比较程序片段输出的是
+    String s1 = "ab";
+    String s2 = "abc";
+    String s3 = s1 + "c";
+    System.out.println(s3 == s2);
+#OPTIONS
+0
+1
+true
+false
+#CORRECT
+4
+#END
+
+#CHOICE
+关于字符串的比较，如下代码执行结果是（     ）。
+    String s1 = "imooc";
+    String s2 = "I love " + s1;
+    String s3 = "I love imooc";
+    System.out.println(s2 == s3);
+#OPTIONS
+0
+1
+true
+false
+#CORRECT
+4
+#END
+

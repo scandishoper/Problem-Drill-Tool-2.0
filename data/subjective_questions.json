@@ -1,0 +1,56 @@
+[
+  {
+    "id": "d65988d3-1138-4360-af6d-b5b7fe46ad77",
+    "question": "下列程序使用泛型机制创建一个数组列表对象，并向其添加三个元素，利用迭代器遍历该数组列表，请把程序补充完整。\nimport java.util.*;\npublic class Main{\npublic static void main(String[] args) {\nList<____1____> al=new ArrayList<____2____>();\nal.add(\"red\");\nal.add(\"yellow\");\nal.add(\"blue\");\n\nListIterator< String > listIter=al.listIterator();\nwhile(____3____)\nSystem.out.print(____4____+\"  \");\n}\n}",
+    "answer": "String\nString\nlistIter.hasNext()\nlistIter.next()",
+    "source": "java.txt"
+  },
+  {
+    "id": "75768c3a-9d43-49c5-8d8d-807370abdf67",
+    "question": "public class Main {\npublic static void main(String[] args) {\nString s = \"hello\";\ntry {\ns = s+\" world\";\ns.toUpperCase();\nString[] a = s.split(\"o\");\nSystem.out.println(a.length);\n} catch (Exception e) {\nSystem.out.print(s);\n} finally {\nSystem.out.print(s);\n}}}",
+    "answer": "3\nhello world",
+    "source": "java.txt"
+  },
+  {
+    "id": "048f8448-f251-4b08-acbe-b9295aadf195",
+    "question": "class Exception1  extends Exception {}\nclass Exception2  extends Exception1  {}\npublic class Test {\npublic static void main(String[] args)\nthrows Exception {\ntry {\ntry {\nthrow new Exception2();\n} catch ( Exception1  a ) {\nSystem.out.println(\"Caught Exception1\");\nthrow a;\n}\n} catch ( Exception2 s ) {\nSystem.out.println(\"Caught Exception2\");\nreturn ;\n} finally {\nSystem.out.println(\"Hello World!\");\n}}}",
+    "answer": "Caught Exception1\nCaught Exception2\nHello World!",
+    "source": "java.txt"
+  },
+  {
+    "id": "678178dd-9766-492e-a138-55c593501f46",
+    "question": "设计一个Circle类，该类有属性radius，表示圆的半径，其默认值为1；getArea()返回该圆的面积。\n创建一个名为ComparableCircle的类，它继承自Circle类，并实现Comparable接口，在类中实现compareTo方法，使其根据面积比较两个圆。\n编写测试程序求出两个ComparableCircle实例对象的较大者。程序输出如下信息：\nCirlce: radius = 7.0\nArea: 153.93804002589985\nCirlce: radius = 5.0\nArea: 78.53981633974483\nc1较大\nclass Circle {\nprivate double radius;\n\npublic ____1____{\nradius = 1;\n}\n\npublic Circle(double radius) {\n____2____ = radius;\n}\n\npublic double getRadius() {\nreturn radius;\n}\n\npublic void setRadius(double radius) {\nthis.radius = radius;\n}\n\npublic double getArea() {\n____3____\n}\npublic String toString() {\n____4____\n}\n}\nclass ComparableCircle ____5____ Circle ____6____ Comparable<ComparableCircle> {\n\npublic ComparableCircle() {\n}\npublic ComparableCircle(double radius) {\n____7____\n}\n@Override // Implement the compareTo method defined in Comparable\npublic int compareTo(____8____) {\nif (getArea() > o.getArea())\nreturn 1;\nelse if (getArea() < o.getArea())\nreturn -1;\nelse\nreturn 0;\n}\n@Override\npublic String toString() {\nreturn ____9____ + \"\\nArea: \" + getArea();\n}\n}\npublic class Main {\npublic static void main(String[] args) {\nComparableCircle c1 = new ComparableCircle(7);\nComparableCircle c2 = new ComparableCircle(5);\nSystem.out.println(c1);\nSystem.out.println(c2);\nSystem.out.println(____10____?\"c1较大\":\"c2较大\");\n}\n}",
+    "answer": "Circle()\nthis.radius\nreturn radius * radius * Math.PI;\nreturn \"Cirlce: radius = \" + radius;\nextends\nimplements\nsuper(radius);\nComparableCircle o\nsuper.toString()\nc1.compareTo(c2) > 0",
+    "source": "java.txt"
+  },
+  {
+    "id": "11900e4f-dc22-45d2-8647-278410dca85a",
+    "question": "题目要求:\n1.使用this调用已有的有参构造方法，将width与length分别设置为5和6。\n2.在Rectangle类中覆盖toString方法。按照width=实际宽度值,length=实际长度值的格式返回。\npublic Rectangle(){\n____1____\n}\npublic Rectangle(int width, int length) {\nthis.width = width;\nthis.length = length;\n}\npublic ____2____{\n____3____\n}",
+    "answer": "this(5,6);\nString toString()\nreturn \"width=\" + this.width + \",length=\" + this.length;",
+    "source": "java.txt"
+  },
+  {
+    "id": "54e4dd4e-5fc1-4d11-9d13-238d1d6c90d7",
+    "question": "public class SingleValueBuffer {\nprivate Integer value = null; // 缓冲区，只能存一个值\n\npublic synchronized void put(int newValue) throws InterruptedException {\nwhile (______1______) {\n______2______();\n}\nvalue = newValue;\nSystem.out.println(\"Produced: \" + newValue);\n______3______();\n}\n\npublic synchronized int take() throws InterruptedException {\nwhile (______4______) {\n______5______();\n}\nint result = value;\nvalue = null; // 清空缓冲区\nSystem.out.println(\"Consumed: \" + result);\n______6______();\nreturn result;\n}\n}",
+    "answer": "value != null\nwait()\nnotifyAll() / notify()\nvalue == null\nwait()\nnotifyAll() / notify()",
+    "source": "java.txt"
+  },
+  {
+    "id": "cb209394-fad1-4429-9b0b-ac2b654fa069",
+    "question": "题目要求:\n1.使用this调用已有的有参构造方法，将width与length分别设置为5和6。\n2.在Rectangle类中覆盖toString方法。按照width=实际宽度值,length=实际长度值的格式返回。\npublic Rectangle(){\n____1____\n}\npublic Rectangle(int width, int length) {\nthis.width = width;\nthis.length = length;\n}\npublic ____2____{\n____3____\n}",
+    "answer": "this(5,6);\nString toString()\nreturn \"width=\" + this.width + \",length=\" + this.length;",
+    "source": "sub-answer.txt"
+  },
+  {
+    "id": "7dd018b0-e281-410f-8ec5-a8d2fe46fa41",
+    "question": "设计一个Circle类，该类有属性radius，表示圆的半径，其默认值为1；getArea()返回该圆的面积。\n创建一个名为ComparableCircle的类，它继承自Circle类，并实现Comparable接口，在类中实现compareTo方法，使其根据面积比较两个圆。\n编写测试程序求出两个ComparableCircle实例对象的较大者。程序输出如下信息：\nCirlce: radius = 7.0\nArea: 153.93804002589985\nCirlce: radius = 5.0\nArea: 78.53981633974483\nc1较大\nclass Circle {\nprivate double radius;\npublic ____1____{\nradius = 1;\n}\npublic Circle(double radius) {\n____2____ = radius;\n}\npublic double getRadius() {\nreturn radius;\n}\npublic void setRadius(double radius) {\nthis.radius = radius;\n}\npublic double getArea() {\n____3____\n}\npublic String toString() {\n____4____\n}\n}\nclass ComparableCircle ____5____ Circle ____6____ Comparable<ComparableCircle> {\npublic ComparableCircle() {\n}\npublic ComparableCircle(double radius) {\n____7____\n}\n@Override // Implement the compareTo method defined in Comparable\npublic int compareTo(____8____) {\nif (getArea() > o.getArea())\nreturn 1;\nelse if (getArea() < o.getArea())\nreturn -1;\nelse\nreturn 0;\n}\n@Override\npublic String toString() {\nreturn ____9____ + \"\\nArea: \" + getArea();\n}\n}\npublic class Main {\npublic static void main(String[] args) {\nComparableCircle c1 = new ComparableCircle(7);\nComparableCircle c2 = new ComparableCircle(5);\nSystem.out.println(c1);\nSystem.out.println(c2);\nSystem.out.println(____10____?\"c1较大\":\"c2较大\");\n}\n}",
+    "answer": "Circle()\nthis.radius\nreturn radius * radius * Math.PI;\nreturn \"Cirlce: radius = \" + radius;\nextends\nimplements\nsuper(radius);\nComparableCircle o\nsuper.toString()\nc1.compareTo(c2) > 0",
+    "source": "sub-answer.txt"
+  },
+  {
+    "id": "984473e8-d2ac-4b5f-b25d-13884e45f4fd",
+    "question": "你好",
+    "answer": "你好",
+    "source": "sub-questions.txt"
+  }
+]

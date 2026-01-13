@@ -1,0 +1,381 @@
+#JUDGE
+Java 源代码文件编译后会生成 .exe 文件。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+运行 Java 程序时，命令是 java Welcome.class。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+在Java中，String s = null; s += "abc"; 执行后s的值为"nullabc"，且不会抛出NullPointerException。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+byte b = 10; b = b + 1; 会导致编译错误，但是
+byte b = 10; b += 1;    可以正常编译运行。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Math.ceil(2.1) 返回的结果和 Math.max(2.5, 3) 返回的结果都是整数 3
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+    public class Main {
+        public static void main(String[] args) {
+            String s = "hello";
+            char c = (char) (s[0] - 'a' + 'A');
+            System.out.print(c);
+        }
+    }
+这段 java 代码的输出是 H 
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+    public class Main {
+        public static void main(String[] args) {
+            double x = 9.5;
+            System.out.println(Math.floor(x) + ", " + Math.ceil(x) + ", " + Math.round(x));
+        }
+    }
+这段 java 代码运行后的输出是 9.0, 10.0, 10.0
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+构造方法的名字必须与类名相同，且返回类型必须是 void。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+在 Java 中，Circle c1 = new Circle(); Circle c2 = c1;
+如果修改 c1 的半径，c2 的半径也会随之改变。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+    public class Main {
+        public static void main(String[] args) {
+            Integer a = 1;
+            Integer b = 1;
+            System.out.println(a == b);
+        }
+    }
+由于没有用 int 而是使用了 Integer 这个包装类，a 和 b 两者没有指向同一个对象。
+因此这段 java 的输出是 false.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+重写方法必须与被重写方法具有完全一致的返回类型，且不能降低原方法的访问权限
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+    class Parent {
+        private void secret() { System.out.println("Parent secret"); }
+        public void callSecret() { 
+            secret();
+        }
+    }
+    class Child extends Parent {
+        private void secret() { System.out.println("Child secret"); }
+    }
+    public class Test {
+        public static void main(String[] args) {
+            Child c = new Child();
+            c.callSecret();
+        }
+    }
+这段 java 代码运行后的输出是 Child secret
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+抽象类不能被实例化，所以抽象类中不能定义构造方法。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+DataInputStream 可以读取由 PrintWriter 创建的文本文件中的整数。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+Error类及其子类表示的程序错误通常是致命的，程序无法恢复，我们一般不捕获和处理它们
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+static 变量即使不被 transient 修饰，也不会被序列化。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+synchronized 关键字可以修饰一个非静态方法，当一个线程调用该对象的此方法时，会锁定这个对象本身
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+volatile 关键字可以保证变量的原子性操作（例如 count++）。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#CHOICE
+下列哪一项不是Java语言的特点？
+#OPTIONS
+面向对象 
+指针操作 
+跨平台 
+分布式
+#CORRECT
+2
+#END
+
+#CHOICE
+执行以下代码，sum 的值是多少？
+    int sum = 0;
+    sum += 4.5;
+#OPTIONS
+4.5
+4
+5
+编译错误
+#CORRECT
+2
+#END
+
+#CHOICE
+执行以下代码，输出是什么？
+    class Main{
+        public static void main(String[] args){
+            String s1 ="Zhejiang University";
+            String s2 = s1.substring(0, 7);
+            s2.toUpperCase();
+            System.out.println(s2+s1.substring(8));
+        }
+    }
+#OPTIONS
+Zhejian University
+ZHEJIANG University
+ZHEJIAN University
+ZHEJIANGUniversity
+#CORRECT
+1
+#END
+
+#CHOICE
+以下关于this关键字的说法，正确的是：
+#OPTIONS
+可以在任何方法中使用this来引用当前对象
+只能在构造方法中使用this，普通方法中不能使用
+只能在实例方法和构造方法中使用this
+this只能用于引用静态变量
+#CORRECT
+3
+#END
+
+#CHOICE
+    public class Main {
+        public static void main(String[] args) {
+            String s1 = "Hello";
+            String s2 = "Hello";
+            String s3 = "Hel" + "lo";
+            String s4 = "Hel" + new String("lo");
+            String s5 = new String("Hello");
+            String s6 = s5.intern();
+            String s7 = "H";
+            String s8 = "ello";
+            String s9 = s7 + s8;
+
+            System.out.println(s1 == s2);
+            System.out.println(s1 == s3);
+            System.out.println(s1 == s4);
+            System.out.println(s1 == s9);
+            System.out.println(s4 == s5);
+            System.out.println(s1 == s6);
+        }
+    }
+输出结果中有几个 true ?
+#OPTIONS
+2
+3
+4
+6
+#CORRECT
+2
+#END
+
+#CHOICE
+    class Base1 {
+        public int a = 1;
+        public Base1(){
+            test();
+        }
+        public void test(){
+            System.out.println(a);
+        }
+    }
+    public class Child extends Base1 {
+        public int a = 123;
+        public Child(){
+        }
+        public void test(){
+            System.out.println(a);
+        }
+        public static void main(String[] args){
+            Child c = new Child();
+            c.test();
+            Base1 b = c;
+            System.out.println(b.a);
+            System.out.println(c.a);
+        }
+    }
+这个代码输出的4个数字依次是（）
+#OPTIONS
+0,123,1,123
+1,123,1,123
+123,123,1,123
+123,123,123,123
+#CORRECT
+1
+#END
+
+#CHOICE
+下列代码的输出是：
+    interface I {
+        default void print() {
+            System.out.print("I ");
+        }
+    }
+    class A implements I {
+        public void print() {
+            System.out.print("A ");
+        }
+    }
+    class B extends A implements I {
+    }
+    public class Main {
+        public static void main(String[] args) {
+            I obj = new B();
+            obj.print();
+        }
+    }
+#OPTIONS
+I
+A
+编译错误
+运行时异常
+#CORRECT
+2
+#END
+
+#CHOICE
+关于 throw 和 throws，说法正确的是？ 
+#OPTIONS
+throw 用于声明方法可能抛出的异常
+throws 用于在方法体内抛出一个异常对象
+一个方法可以 throws 多个异常，用逗号隔开
+throw 后面跟的是异常类名，而不是对象
+#CORRECT
+3
+#END
+
+#CHOICE
+下面哪行代码正确创建了一个用于写入二进制数据的流？
+#OPTIONS
+new PrintWriter("test.txt") 
+new DataOutputStream(new FileOutputStream("test.dat"))
+new DataOutputStream(new File("test.dat"))
+new FileWriter("test.dat")
+#CORRECT
+2
+#END
+
+#CHOICE
+在以下哪种情况下，线程会抛出 InterruptedException？
+#OPTIONS
+调用 thread.interrupt() 时。
+线程正在执行 synchronized 方法时被中断。
+线程处于 RUNNABLE 状态时被中断。
+线程因调用 sleep() 而阻塞时被中断。
+#CORRECT
+4
+#END

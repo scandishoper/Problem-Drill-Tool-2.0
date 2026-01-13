@@ -1,0 +1,332 @@
+#JUDGE
+Object是Java中所有类的共同父类。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+语句 System.out.println(4+8+"Hello,world!"); 的输出结果是12Hello,world!。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Objects created in JAVA do not need to be deleted or freed by the programmer.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Java is a type-safe language.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+System.out是标准输入流。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+Compiled Java program can be executed in any operating systems directly.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+header is a keyword from the Java language.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+Member variables are to get default init values when the object is to be created.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Some Java objects are put in the heap, while some are in stack.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+A wrapper is used when you want to treat a primitive like an object.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#CHOICE
+Which statement below is incorrect:
+#OPTIONS
+float a = 2.0
+double b=2.0
+int c=2
+long d=2
+#CORRECT
+1
+#END
+
+#CHOICE
+For the code below:
+    boolean m = true;
+    if ( m=false )
+    System.out.println("False");
+    else
+    System.out.println("True");
+What is the output? (  )
+#OPTIONS
+False
+True
+None
+An error will occur when running
+#CORRECT
+2
+#END
+
+#CHOICE
+Which word below is NOT keyword of Java？ (  )
+#OPTIONS
+const
+NULL
+false
+native
+#CORRECT
+2
+#END
+
+#CHOICE
+Which line below will not generate warning or error when compiling? (  )
+#OPTIONS
+float f = 1.3;
+char c = "a";
+byte b = 257;
+int i = 10;
+#CORRECT
+4
+#END
+
+#CHOICE
+Which is the value of temp after the code’s execution? (  )
+    long temp = (int)3.9;
+    temp %= 2;
+#OPTIONS
+0
+1
+2
+3
+#CORRECT
+2
+#END
+
+#CHOICE
+About Java, which statement below is NOT correct?
+#OPTIONS
+The size of int type varies from platform to platform.
+The size of int type is always 4 bytes among all the platforms.
+The size of char type is Unicode coded.
+A value of char type can be transformed to a value of int.
+#CORRECT
+1
+#END
+
+#CHOICE
+Which one below is NOT a valid Java identifier?
+#OPTIONS
+Each
+goto
+名字
+$2
+#CORRECT
+2
+#END
+
+#CHOICE
+The result to compile and run the code below is:
+    public class Ref {
+        public static void main(String[] args){
+                Ref r = new Ref();
+                r.amethod(r);
+        }
+        public void amethod(Ref r){
+                int i = 99;
+                multi(r);
+        System.out.println(i);
+        }
+        public void multi(Ref r){
+                r.i = r.i * 2;
+    }}
+#OPTIONS
+Compile fails.
+Prints: 99
+Prints: 198
+Run-time error.
+#CORRECT
+1
+#END
+
+#CHOICE
+    public class TestRoom {
+        TestDoor t = new TestDoor();
+        TestRoom() {}
+        public static void main(String[] args) {
+            TestRoom tt = new TestRoom();
+        }
+    }
+    class TestDoor {
+        TestRoom t = new TestRoom();
+        TestDoor() {}
+        public static void main(String[] args) {
+            TestDoor tt = new TestDoor();
+        }
+    }
+which one is correct?
+#OPTIONS
+It does not compile because there are two main()s in one .java file
+It does not compile because they refer to each other
+It compiles and runs smothly
+It compiles and raises exception at running for stack overflow
+#CORRECT
+4
+#END
+
+#CHOICE
+    class Test {
+        private int m;
+        public static void fun(  ) {
+            // some code…
+        }
+    }
+How to make the member variable m be visited by the function fun()?
+#OPTIONS
+Change private int m to protected int m
+Change private int m to public int m
+Change private int m to static int m
+Change private int m to int m
+#CORRECT
+3
+#END
+
+#CHOICE
+Which line is the right sequence to declare in one compile unit? (  )
+#OPTIONS
+package，import，class
+class，import，package
+import，package，class
+package，class，import
+#CORRECT
+1
+#END
+
+#CHOICE
+For the code below, which statement is right? (  )
+    public class MyClass {
+        static int myArg = 1;
+        public static void main(String[] args) {
+        int myArg;
+            System.out.println(myArg);
+        }
+    }
+#OPTIONS
+Compiles, result is 1
+Compiles, result is 0
+Compile error for no initialization for myArg
+Compile error for local variable myArg has the same name with a static one
+#CORRECT
+3
+#END
+
+#CHOICE
+About object variables, like s as “String s”, which statement below is correct?
+#OPTIONS
+Object variable is exactly the pointer in C++.
+Object variable looks like the pointer in C++, but not calculable.
+Object variable holds an object in its own memory space.
+Each object can be referenced by one object variable only.
+#CORRECT
+2
+#END
+
+#CHOICE
+About the Java language, which statement below is NOT correct?
+#OPTIONS
+Other than the class itself, only derived classes can access a protected member.
+The .length of an array is the number of elements in the array.
+It is possible to have a try statement without any catch clause but a finally clause.
+All primitive number types have their corresponding warp classes.
+#CORRECT
+1
+#END
+
+#CHOICE
+About access control in Java, which statement below is correct?
+#OPTIONS
+A member without any access modifier is default to private
+A member without any access modifier is default to public
+A member without any access modifier is default to protected
+Classes in the same package can access members without any access modifier.
+#CORRECT
+4
+#END
+
+#CHOICE
+    class A {
+        private int m;
+        public int k;
+        static int g;
+        int h;
+        static void f() {}
+    }
+Which variable is accessible in function f?
+#OPTIONS
+m
+k
+g
+h
+#CORRECT
+3
+#END
+
+#CHOICE
+About the Java language, which one below is NOT correct?
+#OPTIONS
+A redefinition of a superclass method in a subclass need not have the same signature as the superclass method. Such a redefinition is not method overriding but is simply an example of method overloading.
+A constructor is a special method with the same name as the class that is used to initialize the members of a class object. Constructors are called when objects of their classes are instantiated.
+A method declared static has a special way to access non-static class members. Using this reference, static methods are able to access all members of that class.
+An array subscript may be an integer or an integer expression. If a program uses an expression as a subscript, then the expression is evaluated to determine the particular element of the array.
+#CORRECT
+3
+#END
+

@@ -1,0 +1,197 @@
+#SUBJECTIVE
+下列程序使用泛型机制创建一个数组列表对象，并向其添加三个元素，利用迭代器遍历该数组列表，请把程序补充完整。
+    import java.util.*;
+    public class Main{
+        public static void main(String[] args) {
+            List<____1____> al=new ArrayList<____2____>(); 
+            al.add("red");
+            al.add("yellow");
+            al.add("blue"); 
+            
+            ListIterator< String > listIter=al.listIterator(); 
+            while(____3____)
+                System.out.print(____4____+"  ");
+        }
+    }
+#ANSWER
+String
+String
+listIter.hasNext()
+listIter.next()
+#END
+
+#SUBJECTIVE
+    public class Main {
+        public static void main(String[] args) {
+            String s = "hello";
+            try {
+                s = s+" world";
+                s.toUpperCase();
+                String[] a = s.split("o");
+                System.out.println(a.length);
+            } catch (Exception e) {
+                System.out.print(s);
+            } finally {
+                System.out.print(s);
+    }}}
+#ANSWER
+3
+hello world
+#END
+
+#SUBJECTIVE
+    class Exception1  extends Exception {}
+    class Exception2  extends Exception1  {}
+    public class Test {
+    public static void main(String[] args) 
+        throws Exception {
+        try {
+            try {
+                throw new Exception2();
+            } catch ( Exception1  a ) {
+                System.out.println("Caught Exception1");
+                throw a;
+            }
+        } catch ( Exception2 s ) {
+            System.out.println("Caught Exception2");
+            return ;
+        } finally {
+            System.out.println("Hello World!");
+    }}}
+#ANSWER
+Caught Exception1
+Caught Exception2
+Hello World!
+#END
+
+#SUBJECTIVE
+设计一个Circle类，该类有属性radius，表示圆的半径，其默认值为1；getArea()返回该圆的面积。
+创建一个名为ComparableCircle的类，它继承自Circle类，并实现Comparable接口，在类中实现compareTo方法，使其根据面积比较两个圆。
+编写测试程序求出两个ComparableCircle实例对象的较大者。程序输出如下信息：
+Cirlce: radius = 7.0
+Area: 153.93804002589985
+Cirlce: radius = 5.0
+Area: 78.53981633974483
+c1较大
+    class Circle {
+        private double radius;
+
+        public ____1____{
+            radius = 1;
+        }
+
+        public Circle(double radius) {
+            ____2____ = radius;
+        }
+
+        public double getRadius() {
+            return radius;
+        }
+
+        public void setRadius(double radius) {
+            this.radius = radius;
+        }
+
+        public double getArea() {
+            ____3____
+        }
+        public String toString() {
+            ____4____
+        }
+    }
+    class ComparableCircle ____5____ Circle ____6____ Comparable<ComparableCircle> {
+
+        public ComparableCircle() {
+        }
+        public ComparableCircle(double radius) {
+            ____7____
+        }
+        @Override // Implement the compareTo method defined in Comparable
+        public int compareTo(____8____) {
+            if (getArea() > o.getArea())
+                return 1;
+            else if (getArea() < o.getArea())
+                return -1;
+            else
+                return 0;
+        }
+        @Override
+        public String toString() {
+            return ____9____ + "\nArea: " + getArea();
+        }
+    }
+    public class Main {
+        public static void main(String[] args) {
+            ComparableCircle c1 = new ComparableCircle(7);
+            ComparableCircle c2 = new ComparableCircle(5);
+            System.out.println(c1);
+            System.out.println(c2);
+            System.out.println(____10____?"c1较大":"c2较大");
+        }
+    }
+#ANSWER
+Circle()
+this.radius
+return radius * radius * Math.PI;
+return "Cirlce: radius = " + radius;
+extends
+implements
+super(radius);
+ComparableCircle o
+super.toString()
+c1.compareTo(c2) > 0
+#END
+
+#SUBJECTIVE
+题目要求:
+1.使用this调用已有的有参构造方法，将width与length分别设置为5和6。
+2.在Rectangle类中覆盖toString方法。按照width=实际宽度值,length=实际长度值的格式返回。
+    public Rectangle(){
+        ____1____
+    }
+    public Rectangle(int width, int length) {
+        this.width = width;
+        this.length = length;
+    }
+    public ____2____{
+        ____3____
+    }    
+#ANSWER
+this(5,6);
+String toString()
+return "width=" + this.width + ",length=" + this.length;
+#END
+
+#SUBJECTIVE
+    public class SingleValueBuffer {
+        private Integer value = null; // 缓冲区，只能存一个值
+
+        public synchronized void put(int newValue) throws InterruptedException {
+            while (______1______) {
+                ______2______(); 
+            }
+            value = newValue;
+            System.out.println("Produced: " + newValue);
+            ______3______(); 
+        }
+
+        public synchronized int take() throws InterruptedException {
+            while (______4______) { 
+                ______5______(); 
+            }
+            int result = value;
+            value = null; // 清空缓冲区
+            System.out.println("Consumed: " + result);
+            ______6______(); 
+            return result;
+        }
+    }
+#ANSWER
+value != null
+wait()
+notifyAll() / notify()
+value == null
+wait()
+notifyAll() / notify()
+#END
+

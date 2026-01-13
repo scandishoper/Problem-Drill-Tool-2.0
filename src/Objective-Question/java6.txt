@@ -1,0 +1,314 @@
+#JUDGE
+Java中数组的元素只能是简单数据类型。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+把数组中元素按某种顺序排列的过程叫做查找 。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+一个数组可以存放许多不同类型的数值。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+制造（new）数组时，要指定数组长度，以便为数组分配内存。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+length of an array is the number of elements in the array.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Arrays in Java can change its size as needed.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+There is a length() method for all the arrays to represent the number of elements
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+An array subscript may be an integer or an integer expression. If a program uses an expression as a subscript, then the expression is evaluated to determine the particular element of the array.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+To pass one row of a double-subscripted array to a method that receives a single-subscripted array, simply pass the name of the array followed by the row subscript.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#CHOICE
+Given the following expression: int m[] = {0, 1, 2, 3, 4, 5, 6 };
+Which result of the following expressions equals to the number of the array elements? (  )
+#OPTIONS
+m.length()
+m.length
+m.length()+1
+m.length+1
+#CORRECT
+2
+#END
+
+#CHOICE
+    Set<Integer> s = new HashSet<Integer>();
+    s.add(1);
+    s.add(2);
+    s.add(1);
+Which statement below is correct?
+#OPTIONS
+It compiles, but only two element left in s
+It does not compile because 1 and 2 are not objects of Integer
+It compiles but exception raises at line 2, for 1 is not an objects of Integer
+It compiles but exception raises at line 4, for 1 is already in the set
+#CORRECT
+1
+#END
+
+#CHOICE
+    class B {}
+    class C extends B {}
+Which function below is NOT able to accept objects of both List<B> and List<C>?
+#OPTIONS
+void f(List<? extends B> list);
+void f(List<B> list);
+void f(List list);
+void f(List<?> list);
+#CORRECT
+2
+#END
+
+#CHOICE
+About Java containers, which statement below is NOT correct?
+#OPTIONS
+ArrayList holds the elements in a particular sequence.
+TreeSet cannot have any duplicate elements.
+LinkedList holds the elements in a particular sequence.
+List, Set and Map, they all have stream() interface.
+#CORRECT
+4
+#END
+
+#CHOICE
+What will happen to access an invalid index of an array?
+#OPTIONS
+Program terminated.
+Exception thrown.
+System crashed.
+Access ignored.
+#CORRECT
+2
+#END
+
+#CHOICE
+Given a=new int[10], which expression below can cause ArrayIndexOutOfBoundsException?
+#OPTIONS
+a[0] += 9;
+a[9]=10;
+a[9]
+for(int i=0;i<=10;i++) a[i]++;
+#CORRECT
+4
+#END
+
+#CHOICE
+Given list an object of ArrayList, which code below for //todo delete can remove an element in the list correctly and safely?
+    Iterator it = list.iterator();
+    int index = 0;
+    while (it.hasNext()){
+            Object obj = it.next();
+            if (needDelete(obj)) { // returns Boolean for removing or not
+                //todo delete
+            }
+            index ++;
+    }
+#OPTIONS
+list.remove(obj);
+list.remove(index);
+list.remove(it.next());
+it.remove();
+#CORRECT
+4
+#END
+
+#CHOICE
+Which of the interfaces below is a collection as duplicating, ordered, unsorted?
+#OPTIONS
+ArrayList
+HashMap
+TreeSet
+Collection
+#CORRECT
+1
+#END
+
+#CHOICE
+Which statement is true for the class java.util.ArrayList?
+#OPTIONS
+The elements in the collection are ordered.
+The collection is guaranteed to be immutable.
+The elements in the collection are guaranteed to be unique.
+The elements in the collections are guaranteed to be synchronized.
+#CORRECT
+1
+#END
+
+#CHOICE
+Which most closely matches a description of a Java Map?
+#OPTIONS
+A vector of arrays for a 2D geographic representation
+A class for containing unique array elements
+A class for containing unique vector elements
+An interface that ensures that implementing classes cannot contain duplicate keys
+#CORRECT
+4
+#END
+
+#CHOICE
+What will happen if you compile/run the following lines of code?
+    Vector a = new Vector();
+    a.addElement(10);
+    System.out.println(a.elementAt(0));
+#OPTIONS
+Prints 10.
+Prints 11.
+Compilation error at line 3.
+Prints some garbage.
+#CORRECT
+1
+#END
+
+#CHOICE
+About Java containers, which statement below is NOT correct?
+#OPTIONS
+List holds the elements in a particular sequence
+Set cannot have any duplicate elements
+Map has group of key-value object pairs
+Iterator can deal with List, Set and Map
+#CORRECT
+4
+#END
+
+#CHOICE
+    List<String> ls = new ArrayList<String>();
+    List<Object> lo = ls;
+    lo.add(new Object());
+    String s = ls.get(0);
+Which statement below is correct?
+#OPTIONS
+It does not compile
+It compiles but exception raises at line 2
+It compiles but exception raises at line 3
+It compiles but exception raises at line 4
+#CORRECT
+1
+#END
+
+#CHOICE
+ Which one below is correct to define and create an array? (  )
+#OPTIONS
+int a[5];
+int a[] = new [5];
+int a[] = {1,2,3,4,5};
+int a = new int[5];
+#CORRECT
+3
+#END
+
+#CHOICE
+Which of the interfaces below is a collection as duplicating, ordered, unsorted?
+#OPTIONS
+List
+Map
+Set
+Collection
+#CORRECT
+1
+#END
+
+#CHOICE
+    Set<Integer> s = new HashSet<Integer>();
+    s.add(new Integer(1));
+    s.add(new Integer(2));
+    s.add(new Integer(1));
+Which statement below is correct?
+#OPTIONS
+It compiles, but only two elements left in s.
+It does not compile.
+It compiles but exception raises at line 4, for 1 is already in the set.
+It complies and there are three elements in s.
+#CORRECT
+1
+#END
+
+#CHOICE
+What will happen if you try to compile and run the following code?
+    public class Q {
+        public static void main(String argv[]){
+            int anar[]=new int[5];
+            System.out.println(anar[0]);
+        }
+    }
+#OPTIONS
+Error: anar is referenced before it is initialized
+null
+0
+5
+#CORRECT
+3
+#END
+
+#CHOICE
+    ArrayList<Integer> a = new ArrayList<Integer>();
+    ArrayList<Double> b = new ArrayList<Double>();
+Which statement below is NOT correct?
+#OPTIONS
+a.getClass().equals(b.getClass()) is true
+a.getClass() == b.getClass() is true
+a instanceof ArrayList is true
+a.getClass() == b.getClass() is false
+#CORRECT
+4
+#END
+

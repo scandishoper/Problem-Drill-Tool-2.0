@@ -1,0 +1,1396 @@
+#JUDGE
+Java的字符类型采用的是Unicode编码，每个Unicode码占16个比特。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Java的各种数据类型占用固定长度，与具体的软硬件平台环境无关。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+对象是类的实例（instance）。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Java is a type-safe language.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Compiled Java program can be executed in any operating systems directly.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+设String对象s="Hello "，运行语句System.out.println(s.concat("world!"));后String对象s的内容为Hello world!，所以语句输出为Hello world!
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+The replace() method can change a String's content.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+String实例一旦创建完毕，就不能再修改其内容。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+String对象和StringBuffer对象都是字符串类型，创建后的对象都可以在原地进行修改。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+Java的String类中有追加方法append()
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#CHOICE
+About Java, which statement below is NOT correct?
+#OPTIONS
+The size of int type varies from platform to platform.
+The size of int type is always 4 bytes among all the platforms.
+The size of char type is Unicode coded.
+A value of char type can be transformed to a value of int.
+#CORRECT
+1
+#END
+
+#CHOICE
+Which line of code will create a new string in the string pool that can be referenced by the identifier myGame?
+#OPTIONS
+String myGame = "basketball";
+String myGame = new String("basketball");
+String "basketball";
+String[] myGame = new String("basketball");
+#CORRECT
+1
+#END
+
+#CHOICE
+For code below, the result would be?
+    String s = "Welcome to Zhejiang University";
+    String[] a = s.split(" ");
+    System.out.println(a.length);
+#OPTIONS
+4
+3
+Compile error
+Run-time exception
+#CORRECT
+1
+#END
+
+#CHOICE
+About String in Java, which statement below is NOT correct?
+#OPTIONS
+A String object is immutable.
+A String object can be initialized using the = operator with a string literal.
+Class Object defines toString() function to generate a String represents the object.
+A String object can be altered using the = operator with a string literal.
+#CORRECT
+4
+#END
+
+#CHOICE
+What is the value of s2 after this code executes?
+    String s1 = "Happy#day";
+    String s2 = s1.substring(1,5);
+#OPTIONS
+"Happ"
+"Happy"
+"appy"
+"appy#"
+#CORRECT
+3
+#END
+
+#CHOICE
+Which of the following statements is NOT true?
+#OPTIONS
+Strings can be initialized using the = operator with a string literal value.
+The toString() method can be used to return a String value from an object of any class.
+All strings are terminated with a null (‘\0’) character.
+It is impossible to change the contents of a String object.
+#CORRECT
+3
+#END
+
+#CHOICE
+Java应用程序的main方法中有以下语句序列，则运行后输出的结果是？
+    String s="12345#aaa#bbb#67890";
+    int n=s.indexOf("#");
+    int k=s.indexOf("#",n+1);
+    int m=s.indexOf("#",k+1);
+    String s2=s.substring(m+1);
+    System.out.println(s2);
+#OPTIONS
+123456
+67890
+aaa
+bbb
+#CORRECT
+2
+#END
+
+#CHOICE
+Java中，那个方法是StringBuffer类和String类共有的。
+#OPTIONS
+append()
+reverse()
+replace()
+insert()
+#CORRECT
+3
+#END
+
+#CHOICE
+Java中，以下关于String字符串比较程序片段输出的是
+    String s1 = "ab";
+    String s2 = "abc";
+    String s3 = s1 + "c";
+    System.out.println(s3 == s2);
+#OPTIONS
+0
+1
+true
+false
+#CORRECT
+4
+#END
+
+#CHOICE
+关于字符串的比较，如下代码执行结果是（     ）。
+    String s1 = "imooc";
+    String s2 = "I love " + s1;
+    String s3 = "I love imooc";
+    System.out.println(s2 == s3);
+#OPTIONS
+0
+1
+true
+false
+#CORRECT
+4
+#END
+
+#JUDGE
+Object是Java中所有类的共同父类。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+语句 System.out.println(4+8+"Hello,world!"); 的输出结果是12Hello,world!。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Objects created in JAVA do not need to be deleted or freed by the programmer.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Java is a type-safe language.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+System.out是标准输入流。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+Compiled Java program can be executed in any operating systems directly.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+header is a keyword from the Java language.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+Member variables are to get default init values when the object is to be created.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Some Java objects are put in the heap, while some are in stack.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+A wrapper is used when you want to treat a primitive like an object.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#CHOICE
+Which statement below is incorrect:
+#OPTIONS
+float a = 2.0
+double b=2.0
+int c=2
+long d=2
+#CORRECT
+1
+#END
+
+#CHOICE
+For the code below:
+    boolean m = true;
+    if ( m=false )
+    System.out.println("False");
+    else
+    System.out.println("True");
+What is the output? (  )
+#OPTIONS
+False
+True
+None
+An error will occur when running
+#CORRECT
+2
+#END
+
+#CHOICE
+Which word below is NOT keyword of Java？ (  )
+#OPTIONS
+const
+NULL
+false
+native
+#CORRECT
+2
+#END
+
+#CHOICE
+Which line below will not generate warning or error when compiling? (  )
+#OPTIONS
+float f = 1.3;
+char c = "a";
+byte b = 257;
+int i = 10;
+#CORRECT
+4
+#END
+
+#CHOICE
+Which is the value of temp after the code’s execution? (  )
+    long temp = (int)3.9;
+    temp %= 2;
+#OPTIONS
+0
+1
+2
+3
+#CORRECT
+2
+#END
+
+#CHOICE
+About Java, which statement below is NOT correct?
+#OPTIONS
+The size of int type varies from platform to platform.
+The size of int type is always 4 bytes among all the platforms.
+The size of char type is Unicode coded.
+A value of char type can be transformed to a value of int.
+#CORRECT
+1
+#END
+
+#CHOICE
+Which one below is NOT a valid Java identifier?
+#OPTIONS
+Each
+goto
+名字
+$2
+#CORRECT
+2
+#END
+
+#CHOICE
+The result to compile and run the code below is:
+    public class Ref {
+        public static void main(String[] args){
+                Ref r = new Ref();
+                r.amethod(r);
+        }
+        public void amethod(Ref r){
+                int i = 99;
+                multi(r);
+        System.out.println(i);
+        }
+        public void multi(Ref r){
+                r.i = r.i * 2;
+    }}
+#OPTIONS
+Compile fails.
+Prints: 99
+Prints: 198
+Run-time error.
+#CORRECT
+1
+#END
+
+#CHOICE
+    public class TestRoom {
+        TestDoor t = new TestDoor();
+        TestRoom() {}
+        public static void main(String[] args) {
+            TestRoom tt = new TestRoom();
+        }
+    }
+    class TestDoor {
+        TestRoom t = new TestRoom();
+        TestDoor() {}
+        public static void main(String[] args) {
+            TestDoor tt = new TestDoor();
+        }
+    }
+which one is correct?
+#OPTIONS
+It does not compile because there are two main()s in one .java file
+It does not compile because they refer to each other
+It compiles and runs smothly
+It compiles and raises exception at running for stack overflow
+#CORRECT
+4
+#END
+
+#CHOICE
+    class Test {
+        private int m;
+        public static void fun(  ) {
+            // some code…
+        }
+    }
+How to make the member variable m be visited by the function fun()?
+#OPTIONS
+Change private int m to protected int m
+Change private int m to public int m
+Change private int m to static int m
+Change private int m to int m
+#CORRECT
+3
+#END
+
+#CHOICE
+Which line is the right sequence to declare in one compile unit? (  )
+#OPTIONS
+package，import，class
+class，import，package
+import，package，class
+package，class，import
+#CORRECT
+1
+#END
+
+#CHOICE
+For the code below, which statement is right? (  )
+    public class MyClass {
+        static int myArg = 1;
+        public static void main(String[] args) {
+        int myArg;
+            System.out.println(myArg);
+        }
+    }
+#OPTIONS
+Compiles, result is 1
+Compiles, result is 0
+Compile error for no initialization for myArg
+Compile error for local variable myArg has the same name with a static one
+#CORRECT
+3
+#END
+
+#CHOICE
+About object variables, like s as “String s”, which statement below is correct?
+#OPTIONS
+Object variable is exactly the pointer in C++.
+Object variable looks like the pointer in C++, but not calculable.
+Object variable holds an object in its own memory space.
+Each object can be referenced by one object variable only.
+#CORRECT
+2
+#END
+
+#CHOICE
+About the Java language, which statement below is NOT correct?
+#OPTIONS
+Other than the class itself, only derived classes can access a protected member.
+The .length of an array is the number of elements in the array.
+It is possible to have a try statement without any catch clause but a finally clause.
+All primitive number types have their corresponding warp classes.
+#CORRECT
+1
+#END
+
+#CHOICE
+About access control in Java, which statement below is correct?
+#OPTIONS
+A member without any access modifier is default to private
+A member without any access modifier is default to public
+A member without any access modifier is default to protected
+Classes in the same package can access members without any access modifier.
+#CORRECT
+4
+#END
+
+#CHOICE
+    class A {
+        private int m;
+        public int k;
+        static int g;
+        int h;
+        static void f() {}
+    }
+Which variable is accessible in function f?
+#OPTIONS
+m
+k
+g
+h
+#CORRECT
+3
+#END
+
+#CHOICE
+About the Java language, which one below is NOT correct?
+#OPTIONS
+A redefinition of a superclass method in a subclass need not have the same signature as the superclass method. Such a redefinition is not method overriding but is simply an example of method overloading.
+A constructor is a special method with the same name as the class that is used to initialize the members of a class object. Constructors are called when objects of their classes are instantiated.
+A method declared static has a special way to access non-static class members. Using this reference, static methods are able to access all members of that class.
+An array subscript may be an integer or an integer expression. If a program uses an expression as a subscript, then the expression is evaluated to determine the particular element of the array.
+#CORRECT
+3
+#END
+
+#JUDGE
+A Java class can extend from multiple base classes.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+Without extends keyword in the declaration of a class, that class is inherited from Object
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Multiple inheritances from classes is not allowed in Java.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+protected can be used to prevent methods and data been accessed from non-derived classes.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#CHOICE
+Which one below is a feature of Java?
+#OPTIONS
+Multi-inheritance
+Virtual inheritance
+Generic programming
+Operator overloading
+#CORRECT
+3
+#END
+
+#CHOICE
+    class DataServer extends Server {
+        public String serverName;
+        public DataServer() {
+            serverName = "Customer Service";
+            super(serverName);
+        }
+    }
+Which statement is right?
+#OPTIONS
+Code can pass the compilation
+Code can pass the compilation but a fault would happen in creating object of DataServer
+Code can NOT pass the compilation for the error in the 2nd line
+Code can NOT pass the compilation for the error in the 5th line
+#CORRECT
+4
+#END
+#CHOICE
+If a method defined in a derived class has the same name, return type and parameters with the base one, we call this situation as: (  )
+#OPTIONS
+overload
+override
+inheritance
+construction
+#CORRECT
+2
+#END
+
+#CHOICE
+What will happen if you try to compile and execute B's main() method? (  )
+    class A {
+        int i;
+        A(int i) {    this.i = i * 2;    }
+    }
+    class B extends A {
+        public static void main(String[] args) {
+            B b = new B(2);
+        }
+        B(int x) {
+            System.out.println(x);
+        }
+    }
+#OPTIONS
+The instance variable i is set to 4
+The instance variable i is set to 2
+The instance variable i is set to 0
+This code will not compile
+#CORRECT
+4
+#END
+
+#CHOICE
+About the Java language, which statement below is NOT correct?
+#OPTIONS
+A variable of byte type occupies one byte
+A class can implement more than one interface
+A class can inherit from more than one super class
+All arrays are to be created dynamically.
+#CORRECT
+3
+#END
+
+#CHOICE
+Given the following code how could you invoke the Base constructor that will print out the string "base constructor";
+    class Base{
+        Base(int i){ System.out.println("base constructor");     }
+    }
+    public class BaseSup extends Base{
+        public static void main(String argv[]){
+            BaseSup s= new BaseSup();
+            //One
+        }
+        BaseSup(){
+            //Two
+        }
+    }
+#OPTIONS
+At the line after //One put Base(10);
+At the line after //One put super(10);
+At the line After //Two put super(10);
+At the line After //Two put this (10);
+#CORRECT
+3
+#END
+
+#CHOICE
+    class A {
+        private int i = baz();
+        public int baz() {
+            System.out.print("A");
+            return 0;
+        }
+    }
+    class B extends A {
+        private int i = baz();
+        public int baz() {
+            System.out.print("B");
+            return 10;
+        }
+        public static void main(String[] args) {
+            A a = new B();
+        }
+    }
+What will happen when you compile and run this program?
+#OPTIONS
+The program compiles, runs, and output AB.
+The program compiles, runs, and output BB.
+The program compiles, runs, and output AA.
+The program does not compile.
+#CORRECT
+2
+#END
+
+#CHOICE
+What will happen when you attempt to compile and run this code?
+    abstract class Base{
+        abstract public void myfunc();
+        public void another(){
+            System.out.println("Another method");
+        }
+    }
+    public class Abs extends Base{
+        public static void main(String argv[]){
+            Abs a = new Abs();
+            a.amethod();
+        }
+        public void myfunc(){
+                System.out.println("My Func");
+        }
+        public void amethod(){
+            myfunc();
+        }
+    }
+#OPTIONS
+The code will compile and run, printing out the words "My Func"
+The compiler will complain that the Base class has non abstract methods
+The code will compile but complain at run time that the Base class has non abstract methods
+The compiler will complain that the method myfunc in the base class has no body, nobody at all to looove it
+#CORRECT
+1
+#END
+
+#JUDGE
+枚举类型定义了具有删除功能的方法。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+Overloaded methods can have different return values, and must have different parameter lists. Two methods differing only by return type will result in a compilation error.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+We can use an interface as a data type for a variable.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+接口和类不同，不具有单继承性，它可以继承多个接口。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+一个类的定义，可以继承一个父类的同时，再实现多个接口。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Java接口中没有构造方法。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+一个类可以实现多个接口，但只能继承一个父类。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+接口不允许被 private 或 protected 修饰符修饰。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+接口可以继承自一个接口或多个接口，也可以继承自抽象类。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+接口被编译为独立的字节码文件。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#CHOICE
+    interface I {
+        void f();
+    }
+    class C {
+        void f() {};
+    }
+Which code below compiles?
+#OPTIONS
+class A extends I { void f(); }
+interface A extends I { void f(); }
+class A extends C implements I {}
+interface A implements I { void f(); }
+#CORRECT
+2
+#END
+
+#CHOICE
+下列哪个叙述是正确的？
+#OPTIONS
+一个类最多可以实现两个接口
+允许接口中只有一个抽象方法
+如果一个抽象类实现某个接口，那么它必须要重写接口中的全部方法
+如果一个非抽象类实现某个接口，那么它可以只重写接口中的部分方法
+#CORRECT
+2
+#END
+
+#CHOICE
+接口是一种特殊的类，由（）和公共的抽象方法组成，不能包含普通方法和构造方法。
+#OPTIONS
+全局常量
+成员变量
+成员方法
+构造方法
+#CORRECT
+1
+#END
+
+#CHOICE
+Java中，实现“接口”时的关键字是（ ）
+#OPTIONS
+class
+abstract
+implements
+extends
+#CORRECT
+3
+#END
+
+#CHOICE
+关于枚举类型，说法错误的是：（      ）。
+#OPTIONS
+实质是类类型
+可以定义若干个常量，如颜色、星期、月份等。
+可利用 类型名称.values()方法列出所有常量
+其定义的位置可以在main方法中
+#CORRECT
+4
+#END
+
+#JUDGE
+There is calling-stack information stored in an Exception object.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+It is possible to have a try statement with out any catch clause but a finally clause.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+如下语句不会出现异常：
+    public static void main(String[] args) {
+        Object[] s = new Object[4];
+        s[0] = new String[2];
+    }
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Java中，如果父类中的方法没有声明异常，那么就不能在其子类中的对其重写时声明异常。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+read() in InputStream tries to read the next byte of data from the input stream, so it's returns type is byte.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#CHOICE
+阅读Shape和Circle两个类的定义。在序列化一个Circle的对象circle到文件时，下面哪个字段会被保存到文件中？ (     )
+    class Shape {
+        public String name;
+    }
+    class Circle extends Shape implements Serializable{
+        private float radius;
+        transient int color;
+        public static String type = "Circle";
+    }
+#OPTIONS
+name
+radius
+color
+type
+#CORRECT
+2
+#END
+
+#CHOICE
+transient 变量和下面哪一项有关？
+#OPTIONS
+Cloneable
+Serializable
+Runnable
+Throwable
+Comparable
+#CORRECT
+2
+#END
+
+#CHOICE
+Suppose there is no file Hello.txt in the current directory. Run the program:
+    import java.io.*;
+    public class ABC {
+        public static void main(String argv[]) throws Exception {
+            ABC m=new ABC();
+            System.out.println(m.ff());
+        }
+        public int ff() {
+            try {
+                FileInputStream dis=new FileInputStream("Hello.txt");
+            } catch (FileNotFoundException fne) {
+                System.out.print("No such file found, ");
+                throw fne;
+            } finally {
+                System.out.print("Doing finally, ");
+            }
+            return 0;
+        }
+    }
+#OPTIONS
+No such file found,
+No such file found ,0
+No such file found, Doing finally,
+No such file found, Doing finally, 0
+#CORRECT
+3
+#END
+
+#CHOICE
+Below is the function header for write() in OutputStream void write(int b) . Now given code below, what would be the size and the content of the output file?
+    int i=0xcafebabe;
+    FileOutputStream out = new FileOutputStream("output");
+    out.write(i);
+#OPTIONS
+1 byte and 0xbe
+1 byte and 0xca
+4 bytes as 0xcafebabe
+4 bytes as 0xbebafeca
+#CORRECT
+1
+#END
+
+#CHOICE
+For InputStream.read(), the read() with no parameters, which statement below is correct?
+#OPTIONS
+read() returns int, because it has to return EOF to indicate the end of the file
+read() returns byte, because it reads a byte from the stream
+read() returns char, because it reads a char from the stream
+read() returns int, as the number of bytes it just read
+#CORRECT
+1
+#END
+
+#CHOICE
+    List<String> l1 = new ArrayList<>();
+    ArrayList<Integer> l2 = new ArrayList<>();
+    System.out.println(l1.getClass() == l2.getClass());
+The result of compilation and running in Java 8 is:
+#OPTIONS
+It compiles and prints out true
+It compiles and prints out false
+It does not compile
+It compiles and exception raises at run-time
+#CORRECT
+1
+#END
+
+#CHOICE
+What must be done when throwing an integer as an exception?
+#OPTIONS
+Integers cannot be thrown.
+Declare integers as throwable.
+Import the exception class.
+Encapsulate the integer handler
+#CORRECT
+1
+#END
+
+#CHOICE
+以下程序运行结果是
+    public class Test {
+        public int div(int a, int b) {
+            try {
+                return a / b;
+            }catch(Exception e){
+                System.out.println(“Exception”);
+            }catch(NullPointerException e){
+                System.out.println(“ArithmeticException”);
+            }
+            catch (ArithmeticException e) {
+                System.out.println(“ArithmeticException”);
+            } finally {
+                System.out.println(“finally”);
+            }
+            return 0;
+        }
+        public static void main(String[] args) {
+            Test demo = new Test();
+            System.out.println(“商是：” + demo.div(9, 0));
+        }
+    }
+#OPTIONS
+Exception finally 商是：0
+ArithmeticException finally 商是：0
+finally商是：0
+编译报错
+#CORRECT
+4
+#END
+
+#JUDGE
+Java中数组的元素只能是简单数据类型。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+把数组中元素按某种顺序排列的过程叫做查找 。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+一个数组可以存放许多不同类型的数值。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+制造（new）数组时，要指定数组长度，以便为数组分配内存。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+length of an array is the number of elements in the array.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Arrays in Java can change its size as needed.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+There is a length() method for all the arrays to represent the number of elements
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+An array subscript may be an integer or an integer expression. If a program uses an expression as a subscript, then the expression is evaluated to determine the particular element of the array.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+To pass one row of a double-subscripted array to a method that receives a single-subscripted array, simply pass the name of the array followed by the row subscript.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#CHOICE
+Given the following expression: int m[] = {0, 1, 2, 3, 4, 5, 6 };
+Which result of the following expressions equals to the number of the array elements? (  )
+#OPTIONS
+m.length()
+m.length
+m.length()+1
+m.length+1
+#CORRECT
+2
+#END
+
+#CHOICE
+    Set<Integer> s = new HashSet<Integer>();
+    s.add(1);
+    s.add(2);
+    s.add(1);
+Which statement below is correct?
+#OPTIONS
+It compiles, but only two element left in s
+It does not compile because 1 and 2 are not objects of Integer
+It compiles but exception raises at line 2, for 1 is not an objects of Integer
+It compiles but exception raises at line 4, for 1 is already in the set
+#CORRECT
+1
+#END
+
+#CHOICE
+    class B {}
+    class C extends B {}
+Which function below is NOT able to accept objects of both List<B> and List<C>?
+#OPTIONS
+void f(List<? extends B> list);
+void f(List<B> list);
+void f(List list);
+void f(List<?> list);
+#CORRECT
+2
+#END
+
+#CHOICE
+About Java containers, which statement below is NOT correct?
+#OPTIONS
+ArrayList holds the elements in a particular sequence.
+TreeSet cannot have any duplicate elements.
+LinkedList holds the elements in a particular sequence.
+List, Set and Map, they all have stream() interface.
+#CORRECT
+4
+#END
+
+#CHOICE
+What will happen to access an invalid index of an array?
+#OPTIONS
+Program terminated.
+Exception thrown.
+System crashed.
+Access ignored.
+#CORRECT
+2
+#END
+
+#CHOICE
+Given a=new int[10], which expression below can cause ArrayIndexOutOfBoundsException?
+#OPTIONS
+a[0] += 9;
+a[9]=10;
+a[9]
+for(int i=0;i<=10;i++) a[i]++;
+#CORRECT
+4
+#END
+
+#CHOICE
+Given list an object of ArrayList, which code below for //todo delete can remove an element in the list correctly and safely?
+    Iterator it = list.iterator();
+    int index = 0;
+    while (it.hasNext()){
+            Object obj = it.next();
+            if (needDelete(obj)) { // returns Boolean for removing or not
+                //todo delete
+            }
+            index ++;
+    }
+#OPTIONS
+list.remove(obj);
+list.remove(index);
+list.remove(it.next());
+it.remove();
+#CORRECT
+4
+#END
+
+#CHOICE
+Which of the interfaces below is a collection as duplicating, ordered, unsorted?
+#OPTIONS
+ArrayList
+HashMap
+TreeSet
+Collection
+#CORRECT
+1
+#END
+
+#CHOICE
+Which statement is true for the class java.util.ArrayList?
+#OPTIONS
+The elements in the collection are ordered.
+The collection is guaranteed to be immutable.
+The elements in the collection are guaranteed to be unique.
+The elements in the collections are guaranteed to be synchronized.
+#CORRECT
+1
+#END
+
+#CHOICE
+Which most closely matches a description of a Java Map?
+#OPTIONS
+A vector of arrays for a 2D geographic representation
+A class for containing unique array elements
+A class for containing unique vector elements
+An interface that ensures that implementing classes cannot contain duplicate keys
+#CORRECT
+4
+#END
+
+#CHOICE
+What will happen if you compile/run the following lines of code?
+    Vector a = new Vector();
+    a.addElement(10);
+    System.out.println(a.elementAt(0));
+#OPTIONS
+Prints 10.
+Prints 11.
+Compilation error at line 3.
+Prints some garbage.
+#CORRECT
+1
+#END
+
+#CHOICE
+About Java containers, which statement below is NOT correct?
+#OPTIONS
+List holds the elements in a particular sequence
+Set cannot have any duplicate elements
+Map has group of key-value object pairs
+Iterator can deal with List, Set and Map
+#CORRECT
+4
+#END
+
+#CHOICE
+    List<String> ls = new ArrayList<String>();
+    List<Object> lo = ls;
+    lo.add(new Object());
+    String s = ls.get(0);
+Which statement below is correct?
+#OPTIONS
+It does not compile
+It compiles but exception raises at line 2
+It compiles but exception raises at line 3
+It compiles but exception raises at line 4
+#CORRECT
+1
+#END
+
+#CHOICE
+ Which one below is correct to define and create an array? (  )
+#OPTIONS
+int a[5];
+int a[] = new [5];
+int a[] = {1,2,3,4,5};
+int a = new int[5];
+#CORRECT
+3
+#END
+
+#CHOICE
+Which of the interfaces below is a collection as duplicating, ordered, unsorted?
+#OPTIONS
+List
+Map
+Set
+Collection
+#CORRECT
+1
+#END
+
+#CHOICE
+    Set<Integer> s = new HashSet<Integer>();
+    s.add(new Integer(1));
+    s.add(new Integer(2));
+    s.add(new Integer(1));
+Which statement below is correct?
+#OPTIONS
+It compiles, but only two elements left in s.
+It does not compile.
+It compiles but exception raises at line 4, for 1 is already in the set.
+It complies and there are three elements in s.
+#CORRECT
+1
+#END
+
+#CHOICE
+What will happen if you try to compile and run the following code?
+    public class Q {
+        public static void main(String argv[]){
+            int anar[]=new int[5];
+            System.out.println(anar[0]);
+        }
+    }
+#OPTIONS
+Error: anar is referenced before it is initialized
+null
+0
+5
+#CORRECT
+3
+#END
+
+#CHOICE
+    ArrayList<Integer> a = new ArrayList<Integer>();
+    ArrayList<Double> b = new ArrayList<Double>();
+Which statement below is NOT correct?
+#OPTIONS
+a.getClass().equals(b.getClass()) is true
+a.getClass() == b.getClass() is true
+a instanceof ArrayList is true
+a.getClass() == b.getClass() is false
+#CORRECT
+4
+#END
+

@@ -1,0 +1,151 @@
+#JUDGE
+枚举类型定义了具有删除功能的方法。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+Overloaded methods can have different return values, and must have different parameter lists. Two methods differing only by return type will result in a compilation error.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+We can use an interface as a data type for a variable.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+接口和类不同，不具有单继承性，它可以继承多个接口。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+一个类的定义，可以继承一个父类的同时，再实现多个接口。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Java接口中没有构造方法。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+一个类可以实现多个接口，但只能继承一个父类。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+接口不允许被 private 或 protected 修饰符修饰。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+接口可以继承自一个接口或多个接口，也可以继承自抽象类。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+接口被编译为独立的字节码文件。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#CHOICE
+    interface I {
+        void f();
+    }
+    class C {
+        void f() {};
+    }
+Which code below compiles?
+#OPTIONS
+class A extends I { void f(); }
+interface A extends I { void f(); }
+class A extends C implements I {}
+interface A implements I { void f(); }
+#CORRECT
+2
+#END
+
+#CHOICE
+下列哪个叙述是正确的？
+#OPTIONS
+一个类最多可以实现两个接口
+允许接口中只有一个抽象方法
+如果一个抽象类实现某个接口，那么它必须要重写接口中的全部方法
+如果一个非抽象类实现某个接口，那么它可以只重写接口中的部分方法
+#CORRECT
+2
+#END
+
+#CHOICE
+接口是一种特殊的类，由（）和公共的抽象方法组成，不能包含普通方法和构造方法。
+#OPTIONS
+全局常量
+成员变量
+成员方法
+构造方法
+#CORRECT
+1
+#END
+
+#CHOICE
+Java中，实现“接口”时的关键字是（ ）
+#OPTIONS
+class
+abstract
+implements
+extends
+#CORRECT
+3
+#END
+
+#CHOICE
+关于枚举类型，说法错误的是：（      ）。
+#OPTIONS
+实质是类类型
+可以定义若干个常量，如颜色、星期、月份等。
+可利用 类型名称.values()方法列出所有常量
+其定义的位置可以在main方法中
+#CORRECT
+4
+#END
+

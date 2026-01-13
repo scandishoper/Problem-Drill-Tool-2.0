@@ -1,0 +1,191 @@
+#JUDGE
+There is calling-stack information stored in an Exception object.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+It is possible to have a try statement with out any catch clause but a finally clause.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+如下语句不会出现异常：
+    public static void main(String[] args) {
+        Object[] s = new Object[4];
+        s[0] = new String[2];
+    }
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Java中，如果父类中的方法没有声明异常，那么就不能在其子类中的对其重写时声明异常。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+read() in InputStream tries to read the next byte of data from the input stream, so it's returns type is byte.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#CHOICE
+阅读Shape和Circle两个类的定义。在序列化一个Circle的对象circle到文件时，下面哪个字段会被保存到文件中？ (     )
+    class Shape {
+        public String name;
+    }
+    class Circle extends Shape implements Serializable{
+        private float radius;
+        transient int color;
+        public static String type = "Circle";
+    }
+#OPTIONS
+name
+radius
+color
+type
+#CORRECT
+2
+#END
+
+#CHOICE
+transient 变量和下面哪一项有关？
+#OPTIONS
+Cloneable
+Serializable
+Runnable
+Throwable
+Comparable
+#CORRECT
+2
+#END
+
+#CHOICE
+Suppose there is no file Hello.txt in the current directory. Run the program:
+    import java.io.*;
+    public class ABC {
+        public static void main(String argv[]) throws Exception {
+            ABC m=new ABC();
+            System.out.println(m.ff());
+        }
+        public int ff() {
+            try {
+                FileInputStream dis=new FileInputStream("Hello.txt");
+            } catch (FileNotFoundException fne) {
+                System.out.print("No such file found, ");
+                throw fne;
+            } finally {
+                System.out.print("Doing finally, ");
+            }
+            return 0;
+        }
+    }
+#OPTIONS
+No such file found,
+No such file found ,0
+No such file found, Doing finally,
+No such file found, Doing finally, 0
+#CORRECT
+3
+#END
+
+#CHOICE
+Below is the function header for write() in OutputStream void write(int b) . Now given code below, what would be the size and the content of the output file?
+    int i=0xcafebabe;
+    FileOutputStream out = new FileOutputStream("output");
+    out.write(i);
+#OPTIONS
+1 byte and 0xbe
+1 byte and 0xca
+4 bytes as 0xcafebabe
+4 bytes as 0xbebafeca
+#CORRECT
+1
+#END
+
+#CHOICE
+For InputStream.read(), the read() with no parameters, which statement below is correct?
+#OPTIONS
+read() returns int, because it has to return EOF to indicate the end of the file
+read() returns byte, because it reads a byte from the stream
+read() returns char, because it reads a char from the stream
+read() returns int, as the number of bytes it just read
+#CORRECT
+1
+#END
+
+#CHOICE
+    List<String> l1 = new ArrayList<>();
+    ArrayList<Integer> l2 = new ArrayList<>();
+    System.out.println(l1.getClass() == l2.getClass());
+The result of compilation and running in Java 8 is:
+#OPTIONS
+It compiles and prints out true
+It compiles and prints out false
+It does not compile
+It compiles and exception raises at run-time
+#CORRECT
+1
+#END
+
+#CHOICE
+What must be done when throwing an integer as an exception?
+#OPTIONS
+Integers cannot be thrown.
+Declare integers as throwable.
+Import the exception class.
+Encapsulate the integer handler
+#CORRECT
+1
+#END
+
+#CHOICE
+以下程序运行结果是
+    public class Test {
+        public int div(int a, int b) {
+            try {
+                return a / b;
+            }catch(Exception e){
+                System.out.println(“Exception”);
+            }catch(NullPointerException e){
+                System.out.println(“ArithmeticException”);
+            }
+            catch (ArithmeticException e) {
+                System.out.println(“ArithmeticException”);
+            } finally {
+                System.out.println(“finally”);
+            }
+            return 0;
+        }
+        public static void main(String[] args) {
+            Test demo = new Test();
+            System.out.println(“商是：” + demo.div(9, 0));
+        }
+    }
+#OPTIONS
+Exception finally 商是：0
+ArithmeticException finally 商是：0
+finally商是：0
+编译报错
+#CORRECT
+4
+#END
+

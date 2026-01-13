@@ -1,0 +1,116 @@
+#CHOICE
+下列指令中，可以在用户态执行的是()。
+I.置时钟指令   II.停机指令   III.存数指令   IV.寄存器清零指令
+#OPTIONS
+I、IV
+III、IV
+II、III、IV
+II、III
+#CORRECT
+2
+#END
+
+#CHOICE
+下列中断事件中，能引起外部中断的事件是()。
+I.时钟中断   II.访管中断   III.缺页中断
+#OPTIONS
+I
+III
+I 和 II
+II 和 III
+#CORRECT
+1
+#END
+
+#CHOICE
+下列关于系统调用和一般过程调用的说法中正确的是( )。
+#OPTIONS
+两者都需要将当前 CPU 中的 PSW 和 PC 的值压栈，以保存现场信息
+系统调用的被调用过程一定运行在内核态
+一般过程调用的被调用过程一定运行在用户态
+两者的调用过程与被调用过程一定都运行在用户态
+#CORRECT
+2
+#END
+
+#CHOICE
+异常是指令执行过程中在处理器内部发生的特殊事件，中断是来自处理器外部的请求事件。下列关于中断或异常情况的叙述中，错误的是()。
+#OPTIONS
+“访存时缺页”属于中断
+“整数除以 0”属于异常
+“DMA 传送结束”属于中断
+“存储保护错”属于异常
+#CORRECT
+1
+#END
+
+#CHOICE
+定时器产生时钟中断后,由时钟中断服务程序更新的部分内容是( )。
+I.内核中时钟变量的值
+II.当前进程占用 CPU 的时间
+III.当前进程在时间片内的剩余执行时间
+#OPTIONS
+仅 I、II
+仅 II、III
+仅 I、III
+I、II、III
+#CORRECT
+4
+#END
+
+#CHOICE
+下列与中断相关的操作中，由操作系统完成的是()。
+I.保存被中断程序的中断点
+II.提供中断服务
+III.初始化中断向量表
+IV.保存中断屏蔽字
+#OPTIONS
+仅I、II
+仅I、II、IV
+仅III、IV
+仅II、III、IV
+#CORRECT
+4
+#END
+
+#CHOICE
+执行系统调用的过程涉及下列操作，其中由操作系统完成的是()。
+I.保存断点和程序状态字
+II.保存通用寄存器的内容
+III.执行系统调用服务例程
+IV.将 CPU 模式改为内核态
+#OPTIONS
+仅I、III
+仅II、III
+仅II、IV
+仅II、III、IV
+#CORRECT
+2
+#END
+
+#CHOICE
+计算机的启动过程是( )。
+1.CPU 加电，CS:IP 指向 FFFF0H;
+2.进行操作系统引导;
+3.执行 JMP 指令跳转到 BIOS; 
+4.登记 BIOS 中断程序入口地址;
+5.硬件自检。
+#OPTIONS
+1-2-3-4-5
+1-3-5-4-2
+1-3-4-5-2
+1-5-3-4-2
+#CORRECT
+3
+#END
+
+#CHOICE
+检查分区表是否正确，确定哪个分区为活动分区，并在程序结束时将该分区的启动程序(操作系统引导扇区)调入内存加以执行，这是()的任务，
+#OPTIONS
+MBR
+引导程序
+操作系统
+BIOS
+#CORRECT
+1
+#END

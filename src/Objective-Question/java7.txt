@@ -1,0 +1,496 @@
+#JUDGE
+在Java中，高优先级的可运行线程会抢占低优先级线程。 
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+HashSet类是线程不安全的。  
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+It is possible to create a thread by extending the Thread class. 
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+All threads defined in one program are to be executed in one CPU concurrently.  
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+J20 When the interrupt() method interrupts a thread, the thread will throw an InterruptedException immediately.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+调用Thread类的run()方法后，新创建的线程就会启动。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+Thread.sleep()方法执行后，在指定时间内所有线程都会暂停，进入休眠状态。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+start()方法和run()方法都声明在Runnable接口中。 
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+一个新线程创建后会自动进入就绪状态，等待CPU的调度。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+The notify(), notifyAll() and wait() are methods of class Thread.
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+The wait(), notify(), and notifyAll() methods must be called in a synchronized method or a synchronized block on the calling object of these methods.
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+静态方法不能使用synchronized关键字来修饰。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#JUDGE
+同步代码块中的锁对象可以是任意类型的对象。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+在Java中，当线程对象的run()方法代码开始执行时，线程便进入了运行状态。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+Java中，JVM的启动是多线程的。
+#OPTIONS
+T
+F
+#CORRECT
+1
+#END
+
+#JUDGE
+当我们创建一个线程对象时，该对象表示的线程就立即开始运行。
+#OPTIONS
+T
+F
+#CORRECT
+2
+#END
+
+#CHOICE
+Given the following code:
+    class Background extends Thread {
+        public int run(){
+            while(true){
+                System.out.println("hello");
+            }
+            return 0;
+        }
+        public static void main(String[] args) {
+            new Thread(new Background()).start();
+        }
+    }
+What will happen when you attempt to compile and run the code?
+#OPTIONS
+It compiles and prints out "hello" repeatedly
+It compiles and prints out nothing.
+It does not compile because of the function signature of run()
+It does not compile because of the expression inside main()
+#CORRECT
+3
+#END
+
+#CHOICE
+How much time is a thread to get the CPU back after calling sleep(1000),suppose the thread will not be interrupted during the sleep?(  )
+#OPTIONS
+Right 1000ms
+Less than 1000ms
+>=1000ms
+May great than or less than 1000ms
+#CORRECT
+3
+#END
+
+#CHOICE
+Which method below is to define an executive body of a thread? (  )
+#OPTIONS
+start()
+init()
+run()
+synchronized()
+#CORRECT
+3
+#END
+
+#CHOICE
+For code below, which statement is correct?
+    public static void main(String[] args) throws Exception {
+        Thread.sleep(5000);
+        System.out.println("awake");
+    }
+#OPTIONS
+Compile error
+Wait about five seconds and it prints out “awake”
+Finishes without any printed out
+Run-time exception every time
+#CORRECT
+2
+
+#END
+
+#CHOICE
+Given code below:
+    Thread t = new Thread() {
+        void run() {
+            for (;;) System.out.println();
+        }
+    };
+    t.start();
+    t.sleep(1000);
+Which statement below is correct?
+#OPTIONS
+Thread t will sleep for at least one second at the last line.
+The current thread, which executes the last line, will sleep for at least one second.
+The last line has no chance to be executed.
+None of the above.
+#CORRECT
+2
+#END
+
+#CHOICE
+Given code below:
+    public class Main {
+        int a = 10;
+        int c = 30;
+        public Runnable getRunnable() {
+            int a = 20;
+            return new Thread() {
+                public void run() {
+                    int b = a+c;
+                }
+            };
+        }
+    }
+What will be the value of b after the assignment in the run() method?
+#OPTIONS
+30
+40
+50
+Compile error
+#CORRECT
+3
+#END
+
+#CHOICE
+Given the following code:
+    public class Run {
+        int i=0;
+        public static void main(String[] args) {
+            new Thread(()->{
+                while(true){
+                    i++;
+                    System.out.println("i="+i);
+                }
+            }).start();
+        }
+    }
+#OPTIONS
+It compiles and prints out the increasing value of i.
+It compiles and prints out nothing.
+It does not compile because member variable i is not accessible in main()
+It does not compile because of the new Thread() statement inside main()
+#CORRECT
+3
+#END
+
+#CHOICE
+Given:
+    class Century implements Runnable {
+        public void run() {
+            for ( int year = 1900; year < 2000; year++ ) {
+                System.out.println(year);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                }
+            }
+            System.out.println(“Happy new millennium!”);
+        }
+        public  void main(String[] args) {
+            Century ourCentury = new Century();
+            //    put your line here
+        }
+    }
+There’s a missing line in Century.main(), which is to begin the thread defined in Century.  Which is the proper code:
+#OPTIONS
+new Thread(this).start();
+Thread t = new Thread(ourCentury); ourCentury.start();
+Thread t = new Thread(this); t.start(ourCentur);
+Thread(ourCentury).start();
+#CORRECT
+1
+#END
+
+#CHOICE
+Which statement below is NOT correct?
+#OPTIONS
+A thread is an instance of Thread class.
+A thread runs the run() method of the Runnable object.
+A new born thread can run immediately when start() is called.
+Thread can access data of the Runnable object.
+#CORRECT
+3
+#END
+
+#CHOICE
+Which statement below is NOT correct?
+#OPTIONS
+A thread is the program itself.
+A thread is a single execution flow of a program.
+Multi-thread means multiple execution flow of one program.
+Multi-thread is a way of concurrence.
+#CORRECT
+1
+#END
+
+#CHOICE
+Which method below can change the priority of a thread?
+#OPTIONS
+run()
+setPriority()
+yield()
+sleep()
+#CORRECT
+2
+#END
+
+#CHOICE
+What will happen when you attempt to compile and run the following code?
+    public class Bground extends Thread{
+        public static void main(String argv[]){
+            Bground b = new Bground();
+            b.run();
+        }
+        public void start(){
+            for (int i = 0; i <10; i++){
+                System.out.println("Value of i = " + i);
+            }
+        }
+    }
+#OPTIONS
+A compile time error indicating that no run method is defined for the Thread class
+A run time error indicating that no run method is defined for the Thread class
+Clean compile and at run time the values 0 to 9 are printed out
+Clean compile but no output at runtime
+#CORRECT
+4
+#END
+
+#CHOICE
+Given:
+    class Century implements Runnable {
+        public void run() {
+            for ( int year = 1900; year < 2000; year++ ) {
+                System.out.println(year);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                }
+            }
+            System.out.println(“Happy new millennium!”);
+        }
+    }
+    public class CountUp {
+        public static void main(String[] args) {
+            Century ourCentury = new Century();
+            //    put your line here
+        }
+    }
+There’s a missing line in CountUp.main(), which is to begin the thread defined in Century.  Which is the proper code:
+#OPTIONS
+Thread t = new Thread(this); t.start();
+Thread t = new Thread(ourCentury); ourCentury.start();
+Thread t = new Thread(this); t.start(ourCentur);
+Thread t = new Thread(ourCentury); t.start();
+#CORRECT
+4
+#END
+
+#CHOICE
+Which of the following best describes the use of the synchronized keyword?
+#OPTIONS
+Allows two process to run in parallel but to communicate with each other
+Ensures only one thread at a time may access a method or object
+Ensures that two or more processes will start and end at the same time
+Ensures that two or more Threads will start and end at the same time
+#CORRECT
+2
+#END
+
+#CHOICE
+Given the following code:
+    class Background implements Runnable{
+        int i=0;
+        public int run(){
+            while(true){
+                i++;
+                System.out.println("i="+i);
+            }
+            return 1;
+        }
+        public static void main(String[] args) {
+            new Thread(new Background()).start();
+        }
+    }//End class
+What will happen when you attempt to compile and run the code?
+#OPTIONS
+It compiles and prints out the increasing value of i.
+It compiles and prints out nothing.
+It does not compile because of the function signature of run()
+It does not compile because of the statement inside main()
+#CORRECT
+1
+#END
+
+#CHOICE
+Given code below：
+    class RunTest implements Runnable{
+        public static void main(String[] arg) {
+            RunTest rt = new RunTest();
+            Thread t = new Thread(rt);
+            //    here
+        }
+        public void run() {
+            while ( true )
+                System.out.println("running");
+        }
+        void go() { start(1); }
+        void start(int i) {}
+    }
+Put which statement below at //here is able to print running endlessly?
+#OPTIONS
+System.out.println("running");
+t.start();
+rt.go();
+rt.start(1);
+#CORRECT
+1
+#END
+
+#CHOICE
+Given:
+    class Century implements Runnable {
+        public void run() {
+            for ( int year = 1900; year < 2000; year++ ) {
+                System.out.println(year);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                }
+            }
+            System.out.println("Happy new millennium!");
+        }
+    }
+    public class CountUp {
+        public static void main(String[] args) {
+            Century ourCentury = new Century();
+            //    put your line here
+        }
+    }
+There’s a missing line in CountUp.main(), which is to begin the thread defined in Century.  Which is the proper code:
+#OPTIONS
+Thread t = new Thread(this); t.start();
+Thread t = new Thread(ourCentury); ourCentury.start();
+Thread t = new Thread(this); t.start(ourCentury);
+Thread t = new Thread(ourCentury); t.start();
+#CORRECT
+4
+#END
+
+#CHOICE
+Which one below is defined by the Runnable interface?
+#OPTIONS
+sleep();
+start();
+wait();
+run();
+#CORRECT
+4
+#END
+
+#CHOICE
+wait() and notify() are used to suspend and resume threads.  They are defined as methods of:
+#OPTIONS
+Thread
+Runnable
+Synchronized
+Object
+#CORRECT
+1
+#END
+

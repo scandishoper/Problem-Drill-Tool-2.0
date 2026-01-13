@@ -1,0 +1,2490 @@
+[
+  {
+    "id": "e0bc2955-f858-4beb-9299-183f17a78295",
+    "qtype": "single",
+    "question": "已知某信道的信息传输速率为 64kb/s，一个载波信号码元有4个有效离散值，则该信道的波特率为( )。",
+    "options": [
+      "16kBaud",
+      "32kBaud",
+      "128kBaud",
+      "256kBaud"
+    ],
+    "answer_index": 1,
+    "source": "cn-cal.txt"
+  },
+  {
+    "id": "b35602e3-e528-49d8-9e35-a0f65726f4ec",
+    "qtype": "single",
+    "question": "二进制信号在信噪比为 127:1 的 4kHz 信道上传输，最大数据传输速率可以达到()",
+    "options": [
+      "28000 Byte/s",
+      "8000 Byte/s",
+      "3500 Byte/s",
+      "1000 Byte/s"
+    ],
+    "answer_index": 3,
+    "source": "cn-cal.txt"
+  },
+  {
+    "id": "091ad368-8cc9-4aa9-b3b9-4446d8fc5bdc",
+    "qtype": "single",
+    "question": "要发送的数据是 1101 0110 11，采用 CRC 检验，生成多项式是 10011，那么最终发送的数据应是( )。",
+    "options": [
+      "1101 0110 1110 10",
+      "1101 0110 1101 10",
+      "1101 0110 1111 10",
+      "1111 0011 0111 00"
+    ],
+    "answer_index": 2,
+    "source": "cn-cal.txt"
+  },
+  {
+    "id": "8be4ea4f-b993-4c67-8355-d1909c47a99a",
+    "qtype": "single",
+    "question": "采用滑动窗口机制对两个相邻节点A和B的通信过程进行流量控制。A和B之间的数据传输速率为 20kb/s，数据帧和确认帧的长度都为 2000B，往返传播时延为 1400ms，采用3比特给数据帧编号，测得在A和B的通信过程中信道利用率大于80%,则( )。\n(注:在 SR 协议中，默认发送窗口大小等于接收窗口大小。)",
+    "options": [
+      "节点 A、B 之间可以采用停止等待协议",
+      "节点 A、B 之间只能采用 GBN 协议",
+      "节点 A、B 之间只能采用 SR 协议",
+      "节点 A、B 之间可以采用 GBN 协议或 SR 协议"
+    ],
+    "answer_index": 3,
+    "source": "cn-cal.txt"
+  },
+  {
+    "id": "daa720f6-3c21-4eda-9ed7-899c6c8eebef",
+    "qtype": "single",
+    "question": "假设两台主机之间采用后退N帧协议传输数据，数据传输速率为 16kb/s，单向传播时延为 250ms，数据帧的长度是 128 字节，确认帧的长度也是 128 字节，为使信道利用率达到最高，则帧序号的比特数至少为( )。",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer_index": 2,
+    "source": "cn-cal.txt"
+  },
+  {
+    "id": "5d41a75f-3479-4ee1-a3b6-da5ebb273e95",
+    "qtype": "single",
+    "question": "在一个采用 CSMA/CD 协议的网络中,传输介质是一根完整的电缆传输速率为 1Gb/s，电缆中的信号传播速率是 200000km/s。若最小数据帧长减少 800 比特,则最远的两个站点之间的距离至少需要()。",
+    "options": [
+      "增加 160m",
+      "增加 80m",
+      "减少 160m",
+      "减少 80m"
+    ],
+    "answer_index": 3,
+    "source": "cn-cal.txt"
+  },
+  {
+    "id": "4fcdebc8-7b26-4c39-938a-03cc1670a476",
+    "qtype": "single",
+    "question": "在采用 CSMA/CA 的802.11无线局域网中,DIFS=128μs,SIFS=28μs，RTS、CTS 和 ACK 帧的传输时延分别是 3μs、2μs和 2μs，忽略信号传播时延。\n若主机 A 要向 AP 发送一个总长度为 1998B 的数据帧，无线链路带宽为 54Mb/s，则隐藏站B收到 AP 发送的 CTS 帧时，设置的网络分配向量 NAV 的值是",
+    "options": [
+      "95μs",
+      "354μs",
+      "356μs",
+      "515μs"
+    ],
+    "answer_index": 1,
+    "source": "cn-cal.txt"
+  },
+  {
+    "id": "f7175f7d-d062-4d84-814e-56ed1f0e394f",
+    "qtype": "single",
+    "question": "对于 100Mb/s 的以太网交换机，当输出端口无排队，以直通交换方式转发一个以太网帧(不包括前导码)时，引入的转发时延至少是()。",
+    "options": [
+      "0.06μs",
+      "0.48μs",
+      "0.64μs",
+      "5.12μs"
+    ],
+    "answer_index": 1,
+    "source": "cn-cal.txt"
+  },
+  {
+    "id": "de193e72-7b23-413c-88da-d5cdc8c878b1",
+    "qtype": "single",
+    "question": "若将 101.200.16.0/20 划分为5个子网，则可能的最小子网的可分配 IP 地址数是()。",
+    "options": [
+      "126",
+      "254",
+      "510",
+      "1022"
+    ],
+    "answer_index": 1,
+    "source": "cn-cal.txt"
+  },
+  {
+    "id": "bd4b1f9e-a276-48c1-a61c-09dbf1bf7d26",
+    "qtype": "single",
+    "question": "现将一个 IP 网络划分为3个子网，若其中一个子网是 192.168.9.128/26,则下列网络中不可能是另外两个子网之一的是()。",
+    "options": [
+      "192.168.9.0/25",
+      "192.168.9.0/26",
+      "192.168.9.192/26",
+      "192.168.9.192/27"
+    ],
+    "answer_index": 1,
+    "source": "cn-cal.txt"
+  },
+  {
+    "id": "a35ee934-7f4a-4500-9c9b-654b874f9592",
+    "qtype": "single",
+    "question": "假设主机 H 通过 TCP 向服务器发送长度为 3000B 的报文，往返时间 RTT=10ms,最长报文段寿命 MSL=30s,最大报文段长度 MSS=1000B,忽略 TCP 段的传输时延,\n报文传输结束后 H 首先请求断开连接,则从 H 请求建立 TCP 连接时刻起,到 H 进入 CLOSED 状态为止，所需的时间至少是()。",
+    "options": [
+      "60.02s",
+      "60.05s",
+      "60.03s",
+      "60.04s"
+    ],
+    "answer_index": 3,
+    "source": "cn-cal.txt"
+  },
+  {
+    "id": "7b4150bf-bc6f-406a-a2f9-75d989df3c92",
+    "qtype": "single",
+    "question": "主机 H 通过持久的 HTTP/1.1 协议请求服务器S上的 5KB 数据，最大段长 MSS=1KB，往返时间 RTT=50ms，最长报文段寿命 MSL=800ms，\n假设双方的接收窗口都足够大，当H收到来自S的第一个携带数据的报文段后，立即向S发送连接释放报文段(注:连接释放报文段可以携带数据信息或确认信息)。\n从H请求与S建立 TCP 连接时刻起，到 H 进入 CLOSED 状态为止，所需的时间至少是()。",
+    "options": [
+      "1700ms",
+      "1750ms",
+      "1800ms",
+      "1850ms"
+    ],
+    "answer_index": 2,
+    "source": "cn-cal.txt"
+  },
+  {
+    "id": "78ad8dbc-ea49-4401-8600-ce9569cd7fcd",
+    "qtype": "single",
+    "question": "在纯 ALOHA 协议中，一个站点想要发送数据时()。",
+    "options": [
+      "必须等待信道空闲",
+      "必须等待下一个时间槽开始",
+      "可以立即发送",
+      "必须先发送 RTS 帧"
+    ],
+    "answer_index": 2,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "bd621042-ac80-4c23-98a8-ebb9eb68ba4b",
+    "qtype": "single",
+    "question": "下列关于令牌环网络的说法中，错误的是( )\nI.信道的利用率比较公平\nII.重负载下信道利用率高\nIII.节点可以一直持有令牌，直至所要发送的数据传输完毕\nIV.节点只能持有令牌一段固定的时间，对于没有数据要发送的节点也是如此",
+    "options": [
+      "仅 I、II 和 III",
+      "仅 III",
+      "仅 III 和 IV",
+      "仅 IV"
+    ],
+    "answer_index": 2,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "7793f056-d091-44eb-a5e5-1b663a07f0a2",
+    "qtype": "single",
+    "question": "假设以太网 A 中 80% 的通信量在本局域网内进行，其余 20% 在本局域网与因特网之间进行，而以太网 B 正好相反。在这两个局域网中。一个使用集线器，另一个使用交换机，则集线器应放置的局域网是（）",
+    "options": [
+      "以太网 A",
+      "以太网 B",
+      "无优劣之分"
+    ],
+    "answer_index": 1,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "1f4c85a6-60b9-4a58-8be1-b24e454df72a",
+    "qtype": "single",
+    "question": "下列关于虚电路和数据报的叙述中，正确的是( )。",
+    "options": [
+      "虚电路是一种分组交换技术，但不能按照存储转发的方式工作",
+      "虚电路的连接是临时性连接，当会话结束时就释放这种连接",
+      "数据报服务不提供可靠传输，但可以保证分组的有序到达",
+      "数据报服务中，每个分组都必须携带源地址和目的地址"
+    ],
+    "answer_index": 3,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "74cd3e75-ebc9-4ce3-896d-3cec56d1a287",
+    "qtype": "single",
+    "question": "下列关于虚电路网络的叙述中，错误的是()。",
+    "options": [
+      "可以确保数据分组传输顺序",
+      "需要为每条虚电路预分配带宽",
+      "建立虚电路时需要进行路由选择",
+      "依据虚电路号(VCID)进行数据分组转发"
+    ],
+    "answer_index": 1,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "3f7de7db-39f0-4ee0-a953-2d97a78846c0",
+    "qtype": "single",
+    "question": "下列关于 IP 分组的首部检验和字段的说法中，错误的是( )。",
+    "options": [
+      "检验和字段检查的范围是首部",
+      "IP 分组的首部检验和与UDP/TCP的检验和相比，检验范围不同但计算方法原理相同",
+      "若网络层发现检验和错误，则丢弃该 IP 分组并发送 ICMP 差错报文",
+      "IP 分组的检验和每经过一个路由器，都有可能发生变化"
+    ],
+    "answer_index": 2,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "a4dd51b9-862b-49f6-a9cf-293cbb31031a",
+    "qtype": "single",
+    "question": "访问互联网的每台主机都需要分配IP地址(假定采用默认子网掩码)，下列可以分配给主机的 IP 地址是",
+    "options": [
+      "192.46.10.0",
+      "110.47.10.0",
+      "127.10.10.17",
+      "211.60.256.21"
+    ],
+    "answer_index": 1,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "ba7da826-59ef-4d5d-af17-011f9950ed30",
+    "qtype": "single",
+    "question": "当下列IP地址作为数据报的目的地址时，互联网上的路由器不会正常转发的是()。",
+    "options": [
+      "192.172.56.23",
+      "172.15.34.128",
+      "192.168.32.17",
+      "172.128.45.34"
+    ],
+    "answer_index": 2,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "b67013a1-582d-46a9-ac00-f4eeb1022f2a",
+    "qtype": "single",
+    "question": "若路由器向 MTU=800B 的链路转发一个总长度为 1580B 的 IP 数据报(首部长度为 20B)时进行了分片，且每个分片尽可能大，\n则第2个分片的总长度字段的值是()。",
+    "options": [
+      "776",
+      "780",
+      "796",
+      "800"
+    ],
+    "answer_index": 2,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "14ba09c6-f04e-4f42-acb7-8d592a10da62",
+    "qtype": "single",
+    "question": "某应用层数据大小为 200B，传输层使用 UDP，网际层使用IP(采用最大首部长度)，使用以太网进行传输(不考虑前导码和 VLAN)，则该应用层数据的传输效率是()。",
+    "options": [
+      "82.6%",
+      "77.5%",
+      "69.9%",
+      "67.1%"
+    ],
+    "answer_index": 2,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "7919db33-ea51-40c1-95f4-8811574c8e37",
+    "qtype": "single",
+    "question": "在进行跨网络的 IP 通信时，不考虑 NAT，传输层使用 UDP 进行封装，数据链路层采用以太网 MAC 帧进行封装，则下列字段中一定保持不变的是\nI. UDP 总长度   II. UDP 检验和   III. 目的 IP 地址",
+    "options": [
+      "仅 I & II",
+      "仅 III",
+      "仅 I & III",
+      "I & II & III"
+    ],
+    "answer_index": 3,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "73d90988-f6a8-4dec-82e6-6eea17a56e7c",
+    "qtype": "single",
+    "question": "一台主机要解析 www.cskaoyan.com 的 IP 地址，若这台主机配置的域名服务器为202.120.66.68，因特网顶级域名服务器为11.2.8.6,而存储 www.cskaoyan.com 的 IP 地址对应关系的域名服务器为 202.113.16.10，则这台主机解析该域名通常首先查询( )。",
+    "options": [
+      "202.120.66.68 域名服务器",
+      "11.2.8.6 域名服务器",
+      "202.113.16.10 域名服务器",
+      "可以从其余3个选项中任选一个"
+    ],
+    "answer_index": 0,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "f2be6f1f-e070-46fc-bbe4-791e7d69f92f",
+    "qtype": "single",
+    "question": "当一台计算机从 FTP 服务器下载文件时，在该 FTP 服务器上对数据进行封装的5个转换步骤是()。",
+    "options": [
+      "比特，数据帧，数据报，数据段，数据",
+      "数据，数据段，数据报，数据帧，比特",
+      "数据，比特，数据帧，数据报，数据段",
+      "数据段，数据报，数据帧，比特，数据"
+    ],
+    "answer_index": 1,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "8da6f7e1-444a-471c-a359-a98b774d3917",
+    "qtype": "single",
+    "question": "下列关于 POP3 协议的说法，( )是错误的。",
+    "options": [
+      "由客户端而非服务器选择接收后是否将邮件保存在服务器上",
+      "登录到服务器后，发送的密码是加密的",
+      "协议是基于 ASCII 码的，不能发送二进制数据",
+      "一个账号在服务器上只能有一个邮件接收目录"
+    ],
+    "answer_index": 1,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "7d60cd6c-882f-40a2-97f4-680bd36e6ca6",
+    "qtype": "single",
+    "question": "下列关于 Cookie 的说法中，错误的是",
+    "options": [
+      "Cookie 仅存储在服务器端",
+      "Cookie 是服务器产生的",
+      "Cookie 会威胁客户的隐私",
+      "Cookie 的作用是跟踪用户的访问和状态"
+    ],
+    "answer_index": 0,
+    "source": "cn-con.txt"
+  },
+  {
+    "id": "1f9e2419-3f1a-466f-b3f0-e58099ce68a4",
+    "qtype": "judge",
+    "question": "Java的字符类型采用的是Unicode编码，每个Unicode码占16个比特。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "f5f86f7d-51a7-443f-8b11-58847cd191a3",
+    "qtype": "judge",
+    "question": "Java的各种数据类型占用固定长度，与具体的软硬件平台环境无关。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "50a65105-ef2b-4e53-bdaa-393801ab4efd",
+    "qtype": "judge",
+    "question": "对象是类的实例（instance）。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "39bbfea6-ab6e-4882-8bb1-6684bd5d9a28",
+    "qtype": "judge",
+    "question": "Java is a type-safe language.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "21e3e9e1-c312-40c1-a4f2-dce272cb2a71",
+    "qtype": "judge",
+    "question": "Compiled Java program can be executed in any operating systems directly.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "8e915766-cea6-428a-b464-0b247b05c527",
+    "qtype": "judge",
+    "question": "设String对象s=\"Hello \"，运行语句System.out.println(s.concat(\"world!\"));后String对象s的内容为Hello world!，所以语句输出为Hello world!",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "6de6ac60-81fa-4987-b775-4fef4aae002b",
+    "qtype": "judge",
+    "question": "The replace() method can change a String's content.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "046ceb22-774a-47c2-9505-91fdefe459b8",
+    "qtype": "judge",
+    "question": "String实例一旦创建完毕，就不能再修改其内容。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "f0c211d6-a1c9-49f9-b8c7-204b492cadf5",
+    "qtype": "judge",
+    "question": "String对象和StringBuffer对象都是字符串类型，创建后的对象都可以在原地进行修改。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "0a899fc9-9762-48de-889b-5ff75f93474a",
+    "qtype": "judge",
+    "question": "Java的String类中有追加方法append()",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "c187059a-4892-4c11-9e4f-b5633c48dd75",
+    "qtype": "single",
+    "question": "About Java, which statement below is NOT correct?",
+    "options": [
+      "The size of int type varies from platform to platform.",
+      "The size of int type is always 4 bytes among all the platforms.",
+      "The size of char type is Unicode coded.",
+      "A value of char type can be transformed to a value of int."
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "7dab3291-c9db-48a9-a298-6315e181a222",
+    "qtype": "single",
+    "question": "Which line of code will create a new string in the string pool that can be referenced by the identifier myGame?",
+    "options": [
+      "String myGame = \"basketball\";",
+      "String myGame = new String(\"basketball\");",
+      "String \"basketball\";",
+      "String[] myGame = new String(\"basketball\");"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "35acbdd5-ffc3-4e77-a935-83f7cb17cf16",
+    "qtype": "single",
+    "question": "For code below, the result would be?\nString s = \"Welcome to Zhejiang University\";\nString[] a = s.split(\" \");\nSystem.out.println(a.length);",
+    "options": [
+      "4",
+      "3",
+      "Compile error",
+      "Run-time exception"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "736d188f-c8f1-4c20-b40c-75d910ef432a",
+    "qtype": "single",
+    "question": "About String in Java, which statement below is NOT correct?",
+    "options": [
+      "A String object is immutable.",
+      "A String object can be initialized using the = operator with a string literal.",
+      "Class Object defines toString() function to generate a String represents the object.",
+      "A String object can be altered using the = operator with a string literal."
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "5edcbbaf-4a97-47b9-a834-778e21759a5f",
+    "qtype": "single",
+    "question": "What is the value of s2 after this code executes?\nString s1 = \"Happy#day\";\nString s2 = s1.substring(1,5);",
+    "options": [
+      "\"Happ\"",
+      "\"Happy\"",
+      "\"appy\"",
+      "\"appy#\""
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "ec36ce9d-a6eb-43e4-9705-b9fe8215a81a",
+    "qtype": "single",
+    "question": "Which of the following statements is NOT true?",
+    "options": [
+      "Strings can be initialized using the = operator with a string literal value.",
+      "The toString() method can be used to return a String value from an object of any class.",
+      "All strings are terminated with a null (‘\\0’) character.",
+      "It is impossible to change the contents of a String object."
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "e8a1c919-13d8-4b6c-bdf3-623e44c4f29b",
+    "qtype": "single",
+    "question": "Java应用程序的main方法中有以下语句序列，则运行后输出的结果是？\nString s=\"12345#aaa#bbb#67890\";\nint n=s.indexOf(\"#\");\nint k=s.indexOf(\"#\",n+1);\nint m=s.indexOf(\"#\",k+1);\nString s2=s.substring(m+1);\nSystem.out.println(s2);",
+    "options": [
+      "123456",
+      "67890",
+      "aaa",
+      "bbb"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "7fc21810-3cfa-4563-bfb1-f130178cbe59",
+    "qtype": "single",
+    "question": "Java中，那个方法是StringBuffer类和String类共有的。",
+    "options": [
+      "append()",
+      "reverse()",
+      "replace()",
+      "insert()"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "5d41e48a-761c-4763-a9a0-b0ff153e7462",
+    "qtype": "single",
+    "question": "Java中，以下关于String字符串比较程序片段输出的是\nString s1 = \"ab\";\nString s2 = \"abc\";\nString s3 = s1 + \"c\";\nSystem.out.println(s3 == s2);",
+    "options": [
+      "0",
+      "1",
+      "true",
+      "false"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "cbb42365-d23e-4c39-aea9-21a0ac68c90c",
+    "qtype": "single",
+    "question": "关于字符串的比较，如下代码执行结果是（     ）。\nString s1 = \"imooc\";\nString s2 = \"I love \" + s1;\nString s3 = \"I love imooc\";\nSystem.out.println(s2 == s3);",
+    "options": [
+      "0",
+      "1",
+      "true",
+      "false"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "ea2e9471-3c33-4226-88e2-b7c2c0b13f93",
+    "qtype": "judge",
+    "question": "Object是Java中所有类的共同父类。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "4b67e586-8519-45de-b957-f2475ef32fcc",
+    "qtype": "judge",
+    "question": "语句 System.out.println(4+8+\"Hello,world!\"); 的输出结果是12Hello,world!。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "05931948-15f9-4d32-98ab-f7c3674d394c",
+    "qtype": "judge",
+    "question": "Objects created in JAVA do not need to be deleted or freed by the programmer.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "1310b87c-b742-4d97-9151-064488b616e7",
+    "qtype": "judge",
+    "question": "Java is a type-safe language.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "f8e389d8-941a-4202-9fd1-5c894d230f7b",
+    "qtype": "judge",
+    "question": "System.out是标准输入流。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "cd0d72f3-b770-4769-a346-223ac3cd94a1",
+    "qtype": "judge",
+    "question": "Compiled Java program can be executed in any operating systems directly.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "8abd4ce1-f3ee-4200-9c83-eec98cd5ae6a",
+    "qtype": "judge",
+    "question": "header is a keyword from the Java language.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "729bf527-3b5d-4b41-88b0-4995e390c097",
+    "qtype": "judge",
+    "question": "Member variables are to get default init values when the object is to be created.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "19e3bddb-bdc2-404f-87e3-1d2580d13ac7",
+    "qtype": "judge",
+    "question": "Some Java objects are put in the heap, while some are in stack.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "3ebe3655-dc9c-41c0-9992-0c2af2201520",
+    "qtype": "judge",
+    "question": "A wrapper is used when you want to treat a primitive like an object.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "fe76a709-b472-47ac-b1af-fac91803c768",
+    "qtype": "single",
+    "question": "Which statement below is incorrect:",
+    "options": [
+      "float a = 2.0",
+      "double b=2.0",
+      "int c=2",
+      "long d=2"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "4e0869b6-ae3e-430f-b134-7b7ca6bf00e7",
+    "qtype": "single",
+    "question": "For the code below:\nboolean m = true;\nif ( m=false )\nSystem.out.println(\"False\");\nelse\nSystem.out.println(\"True\");\nWhat is the output? (  )",
+    "options": [
+      "False",
+      "True",
+      "None",
+      "An error will occur when running"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "492e297c-3d8b-43a4-9247-e6107ed73492",
+    "qtype": "single",
+    "question": "Which word below is NOT keyword of Java？ (  )",
+    "options": [
+      "const",
+      "NULL",
+      "false",
+      "native"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "0dc7502f-ee98-428b-aa41-5b4c930fb0e9",
+    "qtype": "single",
+    "question": "Which line below will not generate warning or error when compiling? (  )",
+    "options": [
+      "float f = 1.3;",
+      "char c = \"a\";",
+      "byte b = 257;",
+      "int i = 10;"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "795fbac9-590f-4e0c-a02f-a20f72004853",
+    "qtype": "single",
+    "question": "Which is the value of temp after the code’s execution? (  )\nlong temp = (int)3.9;\ntemp %= 2;",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "efdec7a7-5bc0-4af4-a445-76a91afc14bf",
+    "qtype": "single",
+    "question": "About Java, which statement below is NOT correct?",
+    "options": [
+      "The size of int type varies from platform to platform.",
+      "The size of int type is always 4 bytes among all the platforms.",
+      "The size of char type is Unicode coded.",
+      "A value of char type can be transformed to a value of int."
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "108ac4a7-4699-4f37-ba21-562cb8e1747e",
+    "qtype": "single",
+    "question": "Which one below is NOT a valid Java identifier?",
+    "options": [
+      "Each",
+      "goto",
+      "名字",
+      "$2"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "bc3beed6-0492-4ded-8733-f18053c700dd",
+    "qtype": "single",
+    "question": "The result to compile and run the code below is:\npublic class Ref {\npublic static void main(String[] args){\nRef r = new Ref();\nr.amethod(r);\n}\npublic void amethod(Ref r){\nint i = 99;\nmulti(r);\nSystem.out.println(i);\n}\npublic void multi(Ref r){\nr.i = r.i * 2;\n}}",
+    "options": [
+      "Compile fails.",
+      "Prints: 99",
+      "Prints: 198",
+      "Run-time error."
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "7f6ca0da-fa21-411b-8f0b-c41efad63d17",
+    "qtype": "single",
+    "question": "public class TestRoom {\nTestDoor t = new TestDoor();\nTestRoom() {}\npublic static void main(String[] args) {\nTestRoom tt = new TestRoom();\n}\n}\nclass TestDoor {\nTestRoom t = new TestRoom();\nTestDoor() {}\npublic static void main(String[] args) {\nTestDoor tt = new TestDoor();\n}\n}\nwhich one is correct?",
+    "options": [
+      "It does not compile because there are two main()s in one .java file",
+      "It does not compile because they refer to each other",
+      "It compiles and runs smothly",
+      "It compiles and raises exception at running for stack overflow"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "bd89bf9b-2b4f-4c4c-a056-d2d93c882ad5",
+    "qtype": "single",
+    "question": "class Test {\nprivate int m;\npublic static void fun(  ) {\n// some code…\n}\n}\nHow to make the member variable m be visited by the function fun()?",
+    "options": [
+      "Change private int m to protected int m",
+      "Change private int m to public int m",
+      "Change private int m to static int m",
+      "Change private int m to int m"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "22afa2c0-6e35-43a3-a318-1d3d5612a302",
+    "qtype": "single",
+    "question": "Which line is the right sequence to declare in one compile unit? (  )",
+    "options": [
+      "package，import，class",
+      "class，import，package",
+      "import，package，class",
+      "package，class，import"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "9166f2f6-b135-46c1-ae04-3ee085f0392c",
+    "qtype": "single",
+    "question": "For the code below, which statement is right? (  )\npublic class MyClass {\nstatic int myArg = 1;\npublic static void main(String[] args) {\nint myArg;\nSystem.out.println(myArg);\n}\n}",
+    "options": [
+      "Compiles, result is 1",
+      "Compiles, result is 0",
+      "Compile error for no initialization for myArg",
+      "Compile error for local variable myArg has the same name with a static one"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "d3eac071-5793-4657-bc06-8c4daf89d387",
+    "qtype": "single",
+    "question": "About object variables, like s as “String s”, which statement below is correct?",
+    "options": [
+      "Object variable is exactly the pointer in C++.",
+      "Object variable looks like the pointer in C++, but not calculable.",
+      "Object variable holds an object in its own memory space.",
+      "Each object can be referenced by one object variable only."
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "6ee17eab-a8ff-4578-844a-9c32b25f7789",
+    "qtype": "single",
+    "question": "About the Java language, which statement below is NOT correct?",
+    "options": [
+      "Other than the class itself, only derived classes can access a protected member.",
+      "The .length of an array is the number of elements in the array.",
+      "It is possible to have a try statement without any catch clause but a finally clause.",
+      "All primitive number types have their corresponding warp classes."
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "6a4289c8-33f4-460b-b87b-65390a723bfb",
+    "qtype": "single",
+    "question": "About access control in Java, which statement below is correct?",
+    "options": [
+      "A member without any access modifier is default to private",
+      "A member without any access modifier is default to public",
+      "A member without any access modifier is default to protected",
+      "Classes in the same package can access members without any access modifier."
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "5f2fe9ad-803b-4fc6-be00-06017912da40",
+    "qtype": "single",
+    "question": "class A {\nprivate int m;\npublic int k;\nstatic int g;\nint h;\nstatic void f() {}\n}\nWhich variable is accessible in function f?",
+    "options": [
+      "m",
+      "k",
+      "g",
+      "h"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "13ced2d6-831a-49ba-b5f2-a353632b8e5a",
+    "qtype": "single",
+    "question": "About the Java language, which one below is NOT correct?",
+    "options": [
+      "A redefinition of a superclass method in a subclass need not have the same signature as the superclass method. Such a redefinition is not method overriding but is simply an example of method overloading.",
+      "A constructor is a special method with the same name as the class that is used to initialize the members of a class object. Constructors are called when objects of their classes are instantiated.",
+      "A method declared static has a special way to access non-static class members. Using this reference, static methods are able to access all members of that class.",
+      "An array subscript may be an integer or an integer expression. If a program uses an expression as a subscript, then the expression is evaluated to determine the particular element of the array."
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "d5b7d53b-e624-47ce-9ea7-d25ea88c8237",
+    "qtype": "judge",
+    "question": "A Java class can extend from multiple base classes.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "562c0d44-fd23-47d0-bdfb-8fc9c3693ebc",
+    "qtype": "judge",
+    "question": "Without extends keyword in the declaration of a class, that class is inherited from Object",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "d38f49f3-2d13-435f-aa7d-d9c522761f62",
+    "qtype": "judge",
+    "question": "Multiple inheritances from classes is not allowed in Java.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "46909063-d885-4e89-a8a4-1729455a13f7",
+    "qtype": "judge",
+    "question": "protected can be used to prevent methods and data been accessed from non-derived classes.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "8efdaa65-1992-40f0-b3a1-2edf0885bc34",
+    "qtype": "single",
+    "question": "Which one below is a feature of Java?",
+    "options": [
+      "Multi-inheritance",
+      "Virtual inheritance",
+      "Generic programming",
+      "Operator overloading"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "c97eb45c-c47c-4545-b537-3034f2ae2066",
+    "qtype": "single",
+    "question": "class DataServer extends Server {\npublic String serverName;\npublic DataServer() {\nserverName = \"Customer Service\";\nsuper(serverName);\n}\n}\nWhich statement is right?",
+    "options": [
+      "Code can pass the compilation",
+      "Code can pass the compilation but a fault would happen in creating object of DataServer",
+      "Code can NOT pass the compilation for the error in the 2nd line",
+      "Code can NOT pass the compilation for the error in the 5th line"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "fa4a50c3-269a-47aa-8ee2-1b9e59af4daf",
+    "qtype": "single",
+    "question": "If a method defined in a derived class has the same name, return type and parameters with the base one, we call this situation as: (  )",
+    "options": [
+      "overload",
+      "override",
+      "inheritance",
+      "construction"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "93c7c408-3391-49a8-9139-89f90ccdf56c",
+    "qtype": "single",
+    "question": "What will happen if you try to compile and execute B's main() method? (  )\nclass A {\nint i;\nA(int i) {    this.i = i * 2;    }\n}\nclass B extends A {\npublic static void main(String[] args) {\nB b = new B(2);\n}\nB(int x) {\nSystem.out.println(x);\n}\n}",
+    "options": [
+      "The instance variable i is set to 4",
+      "The instance variable i is set to 2",
+      "The instance variable i is set to 0",
+      "This code will not compile"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "3e02cae0-7c50-47bd-8f74-7b840b601862",
+    "qtype": "single",
+    "question": "About the Java language, which statement below is NOT correct?",
+    "options": [
+      "A variable of byte type occupies one byte",
+      "A class can implement more than one interface",
+      "A class can inherit from more than one super class",
+      "All arrays are to be created dynamically."
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "bde58868-17f4-48d3-91e1-588a5dbd4873",
+    "qtype": "single",
+    "question": "Given the following code how could you invoke the Base constructor that will print out the string \"base constructor\";\nclass Base{\nBase(int i){ System.out.println(\"base constructor\");     }\n}\npublic class BaseSup extends Base{\npublic static void main(String argv[]){\nBaseSup s= new BaseSup();\n//One\n}\nBaseSup(){\n//Two\n}\n}",
+    "options": [
+      "At the line after //One put Base(10);",
+      "At the line after //One put super(10);",
+      "At the line After //Two put super(10);",
+      "At the line After //Two put this (10);"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "51bc6ef4-b013-4550-9997-3ac418fc11ad",
+    "qtype": "single",
+    "question": "class A {\nprivate int i = baz();\npublic int baz() {\nSystem.out.print(\"A\");\nreturn 0;\n}\n}\nclass B extends A {\nprivate int i = baz();\npublic int baz() {\nSystem.out.print(\"B\");\nreturn 10;\n}\npublic static void main(String[] args) {\nA a = new B();\n}\n}\nWhat will happen when you compile and run this program?",
+    "options": [
+      "The program compiles, runs, and output AB.",
+      "The program compiles, runs, and output BB.",
+      "The program compiles, runs, and output AA.",
+      "The program does not compile."
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "6e7f30df-92f3-44aa-bc05-ef70f4422d2a",
+    "qtype": "single",
+    "question": "What will happen when you attempt to compile and run this code?\nabstract class Base{\nabstract public void myfunc();\npublic void another(){\nSystem.out.println(\"Another method\");\n}\n}\npublic class Abs extends Base{\npublic static void main(String argv[]){\nAbs a = new Abs();\na.amethod();\n}\npublic void myfunc(){\nSystem.out.println(\"My Func\");\n}\npublic void amethod(){\nmyfunc();\n}\n}",
+    "options": [
+      "The code will compile and run, printing out the words \"My Func\"",
+      "The compiler will complain that the Base class has non abstract methods",
+      "The code will compile but complain at run time that the Base class has non abstract methods",
+      "The compiler will complain that the method myfunc in the base class has no body, nobody at all to looove it"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "d09164d7-dce3-4849-9e57-b224db2ef2c5",
+    "qtype": "judge",
+    "question": "枚举类型定义了具有删除功能的方法。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "62b2be3c-ca6a-4c6f-8679-066ede98507e",
+    "qtype": "judge",
+    "question": "Overloaded methods can have different return values, and must have different parameter lists. Two methods differing only by return type will result in a compilation error.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "1d7e3205-8358-4b14-af80-54d2f3ef1e88",
+    "qtype": "judge",
+    "question": "We can use an interface as a data type for a variable.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "77cb7a12-0c2c-4844-aa12-c64e84d5988b",
+    "qtype": "judge",
+    "question": "接口和类不同，不具有单继承性，它可以继承多个接口。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "97c62766-a9f2-4526-9d2a-2be21b5bbd3c",
+    "qtype": "judge",
+    "question": "一个类的定义，可以继承一个父类的同时，再实现多个接口。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "9338d7ec-267b-4211-8d05-9578d5fa6c14",
+    "qtype": "judge",
+    "question": "Java接口中没有构造方法。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "851b2b48-136a-419f-a485-862aa29b06a6",
+    "qtype": "judge",
+    "question": "一个类可以实现多个接口，但只能继承一个父类。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "6400711c-8f3f-4576-b443-b9cc4b3ee9de",
+    "qtype": "judge",
+    "question": "接口不允许被 private 或 protected 修饰符修饰。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "66b01298-61a6-4364-8de2-18a594b8b5e6",
+    "qtype": "judge",
+    "question": "接口可以继承自一个接口或多个接口，也可以继承自抽象类。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "fc686747-4265-4fa5-b489-b68df7f21339",
+    "qtype": "judge",
+    "question": "接口被编译为独立的字节码文件。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "00b543e3-f305-4783-9029-6d24e7788d5f",
+    "qtype": "single",
+    "question": "interface I {\nvoid f();\n}\nclass C {\nvoid f() {};\n}\nWhich code below compiles?",
+    "options": [
+      "class A extends I { void f(); }",
+      "interface A extends I { void f(); }",
+      "class A extends C implements I {}",
+      "interface A implements I { void f(); }"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "b21a8a0c-fe67-4fc6-bd15-51dc42745eca",
+    "qtype": "single",
+    "question": "下列哪个叙述是正确的？",
+    "options": [
+      "一个类最多可以实现两个接口",
+      "允许接口中只有一个抽象方法",
+      "如果一个抽象类实现某个接口，那么它必须要重写接口中的全部方法",
+      "如果一个非抽象类实现某个接口，那么它可以只重写接口中的部分方法"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "080567d9-a2af-444e-8c36-c057cd07fac7",
+    "qtype": "single",
+    "question": "接口是一种特殊的类，由（）和公共的抽象方法组成，不能包含普通方法和构造方法。",
+    "options": [
+      "全局常量",
+      "成员变量",
+      "成员方法",
+      "构造方法"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "3d7af6ac-0c27-4926-8ca2-8e7041879f6f",
+    "qtype": "single",
+    "question": "Java中，实现“接口”时的关键字是（ ）",
+    "options": [
+      "class",
+      "abstract",
+      "implements",
+      "extends"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "7dfd3c7d-c579-4e7f-8392-8f5b38cf3b13",
+    "qtype": "single",
+    "question": "关于枚举类型，说法错误的是：（      ）。",
+    "options": [
+      "实质是类类型",
+      "可以定义若干个常量，如颜色、星期、月份等。",
+      "可利用 类型名称.values()方法列出所有常量",
+      "其定义的位置可以在main方法中"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "0d715768-69b7-4e87-9b4a-d6facbf943c3",
+    "qtype": "judge",
+    "question": "There is calling-stack information stored in an Exception object.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "855bd762-dca4-4a97-a322-afa13d1f0db5",
+    "qtype": "judge",
+    "question": "It is possible to have a try statement with out any catch clause but a finally clause.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "c97037b7-9277-4ee6-9af7-eb811abe58bb",
+    "qtype": "judge",
+    "question": "如下语句不会出现异常：\npublic static void main(String[] args) {\nObject[] s = new Object[4];\ns[0] = new String[2];\n}",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "a905fa23-3263-4e77-b9d9-00fe35ccebfb",
+    "qtype": "judge",
+    "question": "Java中，如果父类中的方法没有声明异常，那么就不能在其子类中的对其重写时声明异常。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "56e8bd29-9800-4e59-aee1-d28e60c3c9e8",
+    "qtype": "judge",
+    "question": "read() in InputStream tries to read the next byte of data from the input stream, so it's returns type is byte.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "3c560cd5-8f80-4425-a095-a3b3b4fc9cde",
+    "qtype": "single",
+    "question": "阅读Shape和Circle两个类的定义。在序列化一个Circle的对象circle到文件时，下面哪个字段会被保存到文件中？ (     )\nclass Shape {\npublic String name;\n}\nclass Circle extends Shape implements Serializable{\nprivate float radius;\ntransient int color;\npublic static String type = \"Circle\";\n}",
+    "options": [
+      "name",
+      "radius",
+      "color",
+      "type"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "4026f109-9fbd-4330-9799-7a862d4fe0fe",
+    "qtype": "single",
+    "question": "transient 变量和下面哪一项有关？",
+    "options": [
+      "Cloneable",
+      "Serializable",
+      "Runnable",
+      "Throwable",
+      "Comparable"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "fad97937-589f-4205-af5b-ae19e50284f4",
+    "qtype": "single",
+    "question": "Suppose there is no file Hello.txt in the current directory. Run the program:\nimport java.io.*;\npublic class ABC {\npublic static void main(String argv[]) throws Exception {\nABC m=new ABC();\nSystem.out.println(m.ff());\n}\npublic int ff() {\ntry {\nFileInputStream dis=new FileInputStream(\"Hello.txt\");\n} catch (FileNotFoundException fne) {\nSystem.out.print(\"No such file found, \");\nthrow fne;\n} finally {\nSystem.out.print(\"Doing finally, \");\n}\nreturn 0;\n}\n}",
+    "options": [
+      "No such file found,",
+      "No such file found ,0",
+      "No such file found, Doing finally,",
+      "No such file found, Doing finally, 0"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "a3405999-78bc-4f45-b62c-b9cdb3f20e42",
+    "qtype": "single",
+    "question": "Below is the function header for write() in OutputStream void write(int b) . Now given code below, what would be the size and the content of the output file?\nint i=0xcafebabe;\nFileOutputStream out = new FileOutputStream(\"output\");\nout.write(i);",
+    "options": [
+      "1 byte and 0xbe",
+      "1 byte and 0xca",
+      "4 bytes as 0xcafebabe",
+      "4 bytes as 0xbebafeca"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "046027c9-ded2-4a96-a020-80d6dbc95012",
+    "qtype": "single",
+    "question": "For InputStream.read(), the read() with no parameters, which statement below is correct?",
+    "options": [
+      "read() returns int, because it has to return EOF to indicate the end of the file",
+      "read() returns byte, because it reads a byte from the stream",
+      "read() returns char, because it reads a char from the stream",
+      "read() returns int, as the number of bytes it just read"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "ee005798-1d4b-4c87-9e51-ff02ebc303ff",
+    "qtype": "single",
+    "question": "List<String> l1 = new ArrayList<>();\nArrayList<Integer> l2 = new ArrayList<>();\nSystem.out.println(l1.getClass() == l2.getClass());\nThe result of compilation and running in Java 8 is:",
+    "options": [
+      "It compiles and prints out true",
+      "It compiles and prints out false",
+      "It does not compile",
+      "It compiles and exception raises at run-time"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "29b7eec8-faea-4f94-ba80-497100698331",
+    "qtype": "single",
+    "question": "What must be done when throwing an integer as an exception?",
+    "options": [
+      "Integers cannot be thrown.",
+      "Declare integers as throwable.",
+      "Import the exception class.",
+      "Encapsulate the integer handler"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "d147f05c-dffd-4639-855b-8853a120b513",
+    "qtype": "single",
+    "question": "以下程序运行结果是\npublic class Test {\npublic int div(int a, int b) {\ntry {\nreturn a / b;\n}catch(Exception e){\nSystem.out.println(“Exception”);\n}catch(NullPointerException e){\nSystem.out.println(“ArithmeticException”);\n}\ncatch (ArithmeticException e) {\nSystem.out.println(“ArithmeticException”);\n} finally {\nSystem.out.println(“finally”);\n}\nreturn 0;\n}\npublic static void main(String[] args) {\nTest demo = new Test();\nSystem.out.println(“商是：” + demo.div(9, 0));\n}\n}",
+    "options": [
+      "Exception finally 商是：0",
+      "ArithmeticException finally 商是：0",
+      "finally商是：0",
+      "编译报错"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "0ed979da-4086-4187-a767-fc021d61d42e",
+    "qtype": "judge",
+    "question": "Java中数组的元素只能是简单数据类型。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "e3812e82-00e0-4b51-a1dd-ebe6bce21880",
+    "qtype": "judge",
+    "question": "把数组中元素按某种顺序排列的过程叫做查找 。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "a3ac5787-fd15-4d8b-8da3-c34b8b96beea",
+    "qtype": "judge",
+    "question": "一个数组可以存放许多不同类型的数值。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "69d5ab81-7eed-454d-b4f1-1aa5bdf61eff",
+    "qtype": "judge",
+    "question": "制造（new）数组时，要指定数组长度，以便为数组分配内存。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "e5bccabe-8a08-4bde-aef8-1ea94fea7600",
+    "qtype": "judge",
+    "question": "length of an array is the number of elements in the array.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "1ea9155e-6980-4e07-942b-236764de6399",
+    "qtype": "judge",
+    "question": "Arrays in Java can change its size as needed.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "ebc59fcb-b102-439b-b47f-ce3e5c43d429",
+    "qtype": "judge",
+    "question": "There is a length() method for all the arrays to represent the number of elements",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "c56f8db2-e40a-43af-ae67-465ad340476f",
+    "qtype": "judge",
+    "question": "An array subscript may be an integer or an integer expression. If a program uses an expression as a subscript, then the expression is evaluated to determine the particular element of the array.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "9efc0368-2c4c-4d79-a923-e1962ac454f7",
+    "qtype": "judge",
+    "question": "To pass one row of a double-subscripted array to a method that receives a single-subscripted array, simply pass the name of the array followed by the row subscript.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "8b49af96-a23c-40b0-b934-35876f061c09",
+    "qtype": "single",
+    "question": "Given the following expression: int m[] = {0, 1, 2, 3, 4, 5, 6 };\nWhich result of the following expressions equals to the number of the array elements? (  )",
+    "options": [
+      "m.length()",
+      "m.length",
+      "m.length()+1",
+      "m.length+1"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "f884804a-c44c-443a-a2cf-a5d2c9c3af2b",
+    "qtype": "single",
+    "question": "Set<Integer> s = new HashSet<Integer>();\ns.add(1);\ns.add(2);\ns.add(1);\nWhich statement below is correct?",
+    "options": [
+      "It compiles, but only two element left in s",
+      "It does not compile because 1 and 2 are not objects of Integer",
+      "It compiles but exception raises at line 2, for 1 is not an objects of Integer",
+      "It compiles but exception raises at line 4, for 1 is already in the set"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "27402191-10f8-4cd7-a18a-0142cab83174",
+    "qtype": "single",
+    "question": "class B {}\nclass C extends B {}\nWhich function below is NOT able to accept objects of both List<B> and List<C>?",
+    "options": [
+      "void f(List<? extends B> list);",
+      "void f(List<B> list);",
+      "void f(List list);",
+      "void f(List<?> list);"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "7d2b4009-42f7-4f7e-b06a-35bd7bdff996",
+    "qtype": "single",
+    "question": "About Java containers, which statement below is NOT correct?",
+    "options": [
+      "ArrayList holds the elements in a particular sequence.",
+      "TreeSet cannot have any duplicate elements.",
+      "LinkedList holds the elements in a particular sequence.",
+      "List, Set and Map, they all have stream() interface."
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "53e5e90c-4521-4c53-aa0a-447588cf346f",
+    "qtype": "single",
+    "question": "What will happen to access an invalid index of an array?",
+    "options": [
+      "Program terminated.",
+      "Exception thrown.",
+      "System crashed.",
+      "Access ignored."
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "13bbb886-925c-45d8-8a0e-8662d7388b77",
+    "qtype": "single",
+    "question": "Given a=new int[10], which expression below can cause ArrayIndexOutOfBoundsException?",
+    "options": [
+      "a[0] += 9;",
+      "a[9]=10;",
+      "a[9]",
+      "for(int i=0;i<=10;i++) a[i]++;"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "3a3d76dd-c50c-4ff5-8fee-78f801825207",
+    "qtype": "single",
+    "question": "Given list an object of ArrayList, which code below for //todo delete can remove an element in the list correctly and safely?\nIterator it = list.iterator();\nint index = 0;\nwhile (it.hasNext()){\nObject obj = it.next();\nif (needDelete(obj)) { // returns Boolean for removing or not\n//todo delete\n}\nindex ++;\n}",
+    "options": [
+      "list.remove(obj);",
+      "list.remove(index);",
+      "list.remove(it.next());",
+      "it.remove();"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "19f6704f-499f-40da-9c8c-5b047abe3941",
+    "qtype": "single",
+    "question": "Which of the interfaces below is a collection as duplicating, ordered, unsorted?",
+    "options": [
+      "ArrayList",
+      "HashMap",
+      "TreeSet",
+      "Collection"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "ad434c45-715d-415d-9d31-47aa77d754ed",
+    "qtype": "single",
+    "question": "Which statement is true for the class java.util.ArrayList?",
+    "options": [
+      "The elements in the collection are ordered.",
+      "The collection is guaranteed to be immutable.",
+      "The elements in the collection are guaranteed to be unique.",
+      "The elements in the collections are guaranteed to be synchronized."
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "f7c4f21d-20dd-439c-95ed-3e6661bb600f",
+    "qtype": "single",
+    "question": "Which most closely matches a description of a Java Map?",
+    "options": [
+      "A vector of arrays for a 2D geographic representation",
+      "A class for containing unique array elements",
+      "A class for containing unique vector elements",
+      "An interface that ensures that implementing classes cannot contain duplicate keys"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "6a75b61c-bddd-468c-a51a-2fabe4fb4df0",
+    "qtype": "single",
+    "question": "What will happen if you compile/run the following lines of code?\nVector a = new Vector();\na.addElement(10);\nSystem.out.println(a.elementAt(0));",
+    "options": [
+      "Prints 10.",
+      "Prints 11.",
+      "Compilation error at line 3.",
+      "Prints some garbage."
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "f1f534df-3ac7-4585-86e6-e5d470ddcca2",
+    "qtype": "single",
+    "question": "About Java containers, which statement below is NOT correct?",
+    "options": [
+      "List holds the elements in a particular sequence",
+      "Set cannot have any duplicate elements",
+      "Map has group of key-value object pairs",
+      "Iterator can deal with List, Set and Map"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "4d328293-0172-4580-ba4e-cc818d630073",
+    "qtype": "single",
+    "question": "List<String> ls = new ArrayList<String>();\nList<Object> lo = ls;\nlo.add(new Object());\nString s = ls.get(0);\nWhich statement below is correct?",
+    "options": [
+      "It does not compile",
+      "It compiles but exception raises at line 2",
+      "It compiles but exception raises at line 3",
+      "It compiles but exception raises at line 4"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "99a422db-42dd-44ae-8adf-ec07d78a236c",
+    "qtype": "single",
+    "question": "Which one below is correct to define and create an array? (  )",
+    "options": [
+      "int a[5];",
+      "int a[] = new [5];",
+      "int a[] = {1,2,3,4,5};",
+      "int a = new int[5];"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "9913ab1f-b92b-47b0-bcca-4e605c9eee2a",
+    "qtype": "single",
+    "question": "Which of the interfaces below is a collection as duplicating, ordered, unsorted?",
+    "options": [
+      "List",
+      "Map",
+      "Set",
+      "Collection"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "8e8bd259-af94-4754-9964-ce7a4d39bb3e",
+    "qtype": "single",
+    "question": "Set<Integer> s = new HashSet<Integer>();\ns.add(new Integer(1));\ns.add(new Integer(2));\ns.add(new Integer(1));\nWhich statement below is correct?",
+    "options": [
+      "It compiles, but only two elements left in s.",
+      "It does not compile.",
+      "It compiles but exception raises at line 4, for 1 is already in the set.",
+      "It complies and there are three elements in s."
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "60ede443-58ac-49f3-9dcf-9f3a33f2e70a",
+    "qtype": "single",
+    "question": "What will happen if you try to compile and run the following code?\npublic class Q {\npublic static void main(String argv[]){\nint anar[]=new int[5];\nSystem.out.println(anar[0]);\n}\n}",
+    "options": [
+      "Error: anar is referenced before it is initialized",
+      "null",
+      "0",
+      "5"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "3c542edb-ed76-447c-b956-74bd35817ce5",
+    "qtype": "single",
+    "question": "ArrayList<Integer> a = new ArrayList<Integer>();\nArrayList<Double> b = new ArrayList<Double>();\nWhich statement below is NOT correct?",
+    "options": [
+      "a.getClass().equals(b.getClass()) is true",
+      "a.getClass() == b.getClass() is true",
+      "a instanceof ArrayList is true",
+      "a.getClass() == b.getClass() is false"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "03b30f79-a956-447d-8841-5e2275653399",
+    "qtype": "judge",
+    "question": "在Java中，高优先级的可运行线程会抢占低优先级线程。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "3d22fd91-c15b-4cb7-a408-0d7090909479",
+    "qtype": "judge",
+    "question": "HashSet类是线程不安全的。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "77bf16e8-8ece-4885-8b9c-fa8248bc68f8",
+    "qtype": "judge",
+    "question": "It is possible to create a thread by extending the Thread class.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "029c3a9b-a210-4c05-8f6b-65d14662f6c2",
+    "qtype": "judge",
+    "question": "All threads defined in one program are to be executed in one CPU concurrently.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "c4e6fee1-ba33-4997-8cca-acd0aa67ac3e",
+    "qtype": "judge",
+    "question": "J20 When the interrupt() method interrupts a thread, the thread will throw an InterruptedException immediately.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "e2d82859-22cf-4816-9393-8afbe211a092",
+    "qtype": "judge",
+    "question": "调用Thread类的run()方法后，新创建的线程就会启动。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "134c69ed-4e4c-4958-8eef-408181efd108",
+    "qtype": "judge",
+    "question": "Thread.sleep()方法执行后，在指定时间内所有线程都会暂停，进入休眠状态。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "e75ed059-57a2-4bc9-8cef-0132271a3932",
+    "qtype": "judge",
+    "question": "start()方法和run()方法都声明在Runnable接口中。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "b5fe30c4-1878-444f-bd51-b864433a4ab0",
+    "qtype": "judge",
+    "question": "一个新线程创建后会自动进入就绪状态，等待CPU的调度。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "bc583220-90ae-46ba-b07c-e5990479bad8",
+    "qtype": "judge",
+    "question": "The notify(), notifyAll() and wait() are methods of class Thread.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "af7a3166-9d6d-4049-ade7-51f0e47a96d6",
+    "qtype": "judge",
+    "question": "The wait(), notify(), and notifyAll() methods must be called in a synchronized method or a synchronized block on the calling object of these methods.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "2d0c9045-9a20-4f92-94a3-0fcb9fc98e53",
+    "qtype": "judge",
+    "question": "静态方法不能使用synchronized关键字来修饰。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "948f4b43-07b3-4f40-97cd-54e90efe74d5",
+    "qtype": "judge",
+    "question": "同步代码块中的锁对象可以是任意类型的对象。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "7264419e-d7b0-4f38-80ab-e25b1b62782d",
+    "qtype": "judge",
+    "question": "在Java中，当线程对象的run()方法代码开始执行时，线程便进入了运行状态。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "38458688-32a0-45ee-bf94-7bfd730511d7",
+    "qtype": "judge",
+    "question": "Java中，JVM的启动是多线程的。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "f97d2c81-8d46-4a4b-afaa-a5f25d5bfcd0",
+    "qtype": "judge",
+    "question": "当我们创建一个线程对象时，该对象表示的线程就立即开始运行。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "e98ec251-1f61-4dff-8279-e59961266f44",
+    "qtype": "single",
+    "question": "Given the following code:\nclass Background extends Thread {\npublic int run(){\nwhile(true){\nSystem.out.println(\"hello\");\n}\nreturn 0;\n}\npublic static void main(String[] args) {\nnew Thread(new Background()).start();\n}\n}\nWhat will happen when you attempt to compile and run the code?",
+    "options": [
+      "It compiles and prints out \"hello\" repeatedly",
+      "It compiles and prints out nothing.",
+      "It does not compile because of the function signature of run()",
+      "It does not compile because of the expression inside main()"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "17a7155a-4f28-46af-8481-221670b22d00",
+    "qtype": "single",
+    "question": "How much time is a thread to get the CPU back after calling sleep(1000),suppose the thread will not be interrupted during the sleep?(  )",
+    "options": [
+      "Right 1000ms",
+      "Less than 1000ms",
+      ">=1000ms",
+      "May great than or less than 1000ms"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "61d135db-e618-47d6-8b38-fca8775fedfc",
+    "qtype": "single",
+    "question": "Which method below is to define an executive body of a thread? (  )",
+    "options": [
+      "start()",
+      "init()",
+      "run()",
+      "synchronized()"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "8c08689e-dc13-4073-8256-f3ddd73e795b",
+    "qtype": "single",
+    "question": "For code below, which statement is correct?\npublic static void main(String[] args) throws Exception {\nThread.sleep(5000);\nSystem.out.println(\"awake\");\n}",
+    "options": [
+      "Compile error",
+      "Wait about five seconds and it prints out “awake”",
+      "Finishes without any printed out",
+      "Run-time exception every time"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "dbe9c959-5cff-4228-b59e-ec86d729cca7",
+    "qtype": "single",
+    "question": "Given code below:\nThread t = new Thread() {\nvoid run() {\nfor (;;) System.out.println();\n}\n};\nt.start();\nt.sleep(1000);\nWhich statement below is correct?",
+    "options": [
+      "Thread t will sleep for at least one second at the last line.",
+      "The current thread, which executes the last line, will sleep for at least one second.",
+      "The last line has no chance to be executed.",
+      "None of the above."
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "9c4bf20d-7496-4aeb-a8a7-5ce4e0099b2c",
+    "qtype": "single",
+    "question": "Given code below:\npublic class Main {\nint a = 10;\nint c = 30;\npublic Runnable getRunnable() {\nint a = 20;\nreturn new Thread() {\npublic void run() {\nint b = a+c;\n}\n};\n}\n}\nWhat will be the value of b after the assignment in the run() method?",
+    "options": [
+      "30",
+      "40",
+      "50",
+      "Compile error"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "f4d1dbae-f279-4f2b-947f-4e755b9779dc",
+    "qtype": "single",
+    "question": "Given the following code:\npublic class Run {\nint i=0;\npublic static void main(String[] args) {\nnew Thread(()->{\nwhile(true){\ni++;\nSystem.out.println(\"i=\"+i);\n}\n}).start();\n}\n}",
+    "options": [
+      "It compiles and prints out the increasing value of i.",
+      "It compiles and prints out nothing.",
+      "It does not compile because member variable i is not accessible in main()",
+      "It does not compile because of the new Thread() statement inside main()"
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "f56c56ee-6810-4af3-950b-766c3d274f99",
+    "qtype": "single",
+    "question": "Given:\nclass Century implements Runnable {\npublic void run() {\nfor ( int year = 1900; year < 2000; year++ ) {\nSystem.out.println(year);\ntry {\nThread.sleep(1000);\n} catch (InterruptedException e) {\n}\n}\nSystem.out.println(“Happy new millennium!”);\n}\npublic  void main(String[] args) {\nCentury ourCentury = new Century();\n//    put your line here\n}\n}\nThere’s a missing line in Century.main(), which is to begin the thread defined in Century.  Which is the proper code:",
+    "options": [
+      "new Thread(this).start();",
+      "Thread t = new Thread(ourCentury); ourCentury.start();",
+      "Thread t = new Thread(this); t.start(ourCentur);",
+      "Thread(ourCentury).start();"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "d3ea9856-75a0-4714-a22c-2f3f7006de77",
+    "qtype": "single",
+    "question": "Which statement below is NOT correct?",
+    "options": [
+      "A thread is an instance of Thread class.",
+      "A thread runs the run() method of the Runnable object.",
+      "A new born thread can run immediately when start() is called.",
+      "Thread can access data of the Runnable object."
+    ],
+    "answer_index": 2,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "dc76d54f-395e-47e1-b545-562656033da0",
+    "qtype": "single",
+    "question": "Which statement below is NOT correct?",
+    "options": [
+      "A thread is the program itself.",
+      "A thread is a single execution flow of a program.",
+      "Multi-thread means multiple execution flow of one program.",
+      "Multi-thread is a way of concurrence."
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "db704542-48d1-438b-b635-43ef572ee94d",
+    "qtype": "single",
+    "question": "Which method below can change the priority of a thread?",
+    "options": [
+      "run()",
+      "setPriority()",
+      "yield()",
+      "sleep()"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "8719b986-0424-4ef2-bab4-ce245ea42e0e",
+    "qtype": "single",
+    "question": "What will happen when you attempt to compile and run the following code?\npublic class Bground extends Thread{\npublic static void main(String argv[]){\nBground b = new Bground();\nb.run();\n}\npublic void start(){\nfor (int i = 0; i <10; i++){\nSystem.out.println(\"Value of i = \" + i);\n}\n}\n}",
+    "options": [
+      "A compile time error indicating that no run method is defined for the Thread class",
+      "A run time error indicating that no run method is defined for the Thread class",
+      "Clean compile and at run time the values 0 to 9 are printed out",
+      "Clean compile but no output at runtime"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "7037abfc-6f7c-4bda-affe-8c46861f327f",
+    "qtype": "single",
+    "question": "Given:\nclass Century implements Runnable {\npublic void run() {\nfor ( int year = 1900; year < 2000; year++ ) {\nSystem.out.println(year);\ntry {\nThread.sleep(1000);\n} catch (InterruptedException e) {\n}\n}\nSystem.out.println(“Happy new millennium!”);\n}\n}\npublic class CountUp {\npublic static void main(String[] args) {\nCentury ourCentury = new Century();\n//    put your line here\n}\n}\nThere’s a missing line in CountUp.main(), which is to begin the thread defined in Century.  Which is the proper code:",
+    "options": [
+      "Thread t = new Thread(this); t.start();",
+      "Thread t = new Thread(ourCentury); ourCentury.start();",
+      "Thread t = new Thread(this); t.start(ourCentur);",
+      "Thread t = new Thread(ourCentury); t.start();"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "5665ccaa-994c-4c47-b1cd-6cd4f67acb18",
+    "qtype": "single",
+    "question": "Which of the following best describes the use of the synchronized keyword?",
+    "options": [
+      "Allows two process to run in parallel but to communicate with each other",
+      "Ensures only one thread at a time may access a method or object",
+      "Ensures that two or more processes will start and end at the same time",
+      "Ensures that two or more Threads will start and end at the same time"
+    ],
+    "answer_index": 1,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "cf836a4e-8fce-40fc-9c1b-67913c1c20cc",
+    "qtype": "single",
+    "question": "Given the following code:\nclass Background implements Runnable{\nint i=0;\npublic int run(){\nwhile(true){\ni++;\nSystem.out.println(\"i=\"+i);\n}\nreturn 1;\n}\npublic static void main(String[] args) {\nnew Thread(new Background()).start();\n}\n}//End class\nWhat will happen when you attempt to compile and run the code?",
+    "options": [
+      "It compiles and prints out the increasing value of i.",
+      "It compiles and prints out nothing.",
+      "It does not compile because of the function signature of run()",
+      "It does not compile because of the statement inside main()"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "00c2e012-faa8-4a25-a819-6073d36b03df",
+    "qtype": "single",
+    "question": "Given code below：\nclass RunTest implements Runnable{\npublic static void main(String[] arg) {\nRunTest rt = new RunTest();\nThread t = new Thread(rt);\n//    here\n}\npublic void run() {\nwhile ( true )\nSystem.out.println(\"running\");\n}\nvoid go() { start(1); }\nvoid start(int i) {}\n}\nPut which statement below at //here is able to print running endlessly?",
+    "options": [
+      "System.out.println(\"running\");",
+      "t.start();",
+      "rt.go();",
+      "rt.start(1);"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "6df15339-41e5-463d-a03b-430b17f3a83b",
+    "qtype": "single",
+    "question": "Given:\nclass Century implements Runnable {\npublic void run() {\nfor ( int year = 1900; year < 2000; year++ ) {\nSystem.out.println(year);\ntry {\nThread.sleep(1000);\n} catch (InterruptedException e) {\n}\n}\nSystem.out.println(\"Happy new millennium!\");\n}\n}\npublic class CountUp {\npublic static void main(String[] args) {\nCentury ourCentury = new Century();\n//    put your line here\n}\n}\nThere’s a missing line in CountUp.main(), which is to begin the thread defined in Century.  Which is the proper code:",
+    "options": [
+      "Thread t = new Thread(this); t.start();",
+      "Thread t = new Thread(ourCentury); ourCentury.start();",
+      "Thread t = new Thread(this); t.start(ourCentury);",
+      "Thread t = new Thread(ourCentury); t.start();"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "663c2b91-2f04-4dca-8003-f8c7a39485a7",
+    "qtype": "single",
+    "question": "Which one below is defined by the Runnable interface?",
+    "options": [
+      "sleep();",
+      "start();",
+      "wait();",
+      "run();"
+    ],
+    "answer_index": 3,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "02de8269-73a3-4b00-a2ca-1a50e34a8e97",
+    "qtype": "single",
+    "question": "wait() and notify() are used to suspend and resume threads.  They are defined as methods of:",
+    "options": [
+      "Thread",
+      "Runnable",
+      "Synchronized",
+      "Object"
+    ],
+    "answer_index": 0,
+    "source": "java-tot.txt"
+  },
+  {
+    "id": "9d590f9c-6550-4f1a-91f7-75b6ae73d9a7",
+    "qtype": "judge",
+    "question": "Java 源代码文件编译后会生成 .exe 文件。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "39a30419-ec46-423b-80bd-c7c442fcf2b4",
+    "qtype": "judge",
+    "question": "运行 Java 程序时，命令是 java Welcome.class。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "bfebb917-47f4-421d-838b-ad6156a6aaa3",
+    "qtype": "judge",
+    "question": "在Java中，String s = null; s += \"abc\"; 执行后s的值为\"nullabc\"，且不会抛出NullPointerException。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "71758335-b630-4668-8884-2349ada5c0c2",
+    "qtype": "judge",
+    "question": "byte b = 10; b = b + 1; 会导致编译错误，但是\nbyte b = 10; b += 1;    可以正常编译运行。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "c5567768-c061-44f5-a785-c158c8931bbd",
+    "qtype": "judge",
+    "question": "Math.ceil(2.1) 返回的结果和 Math.max(2.5, 3) 返回的结果都是整数 3",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "2f211468-b09c-4a98-8344-fb755a41bff7",
+    "qtype": "judge",
+    "question": "public class Main {\npublic static void main(String[] args) {\nString s = \"hello\";\nchar c = (char) (s[0] - 'a' + 'A');\nSystem.out.print(c);\n}\n}\n这段 java 代码的输出是 H",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "a9fb9e26-7f57-4f2b-aeb9-f9c8b18223f0",
+    "qtype": "judge",
+    "question": "public class Main {\npublic static void main(String[] args) {\ndouble x = 9.5;\nSystem.out.println(Math.floor(x) + \", \" + Math.ceil(x) + \", \" + Math.round(x));\n}\n}\n这段 java 代码运行后的输出是 9.0, 10.0, 10.0",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "6f18dfd7-2f0c-4344-9fac-98eccae64a7c",
+    "qtype": "judge",
+    "question": "构造方法的名字必须与类名相同，且返回类型必须是 void。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "c758551f-44e3-42ba-bec8-4071dc7bd6a0",
+    "qtype": "judge",
+    "question": "在 Java 中，Circle c1 = new Circle(); Circle c2 = c1;\n如果修改 c1 的半径，c2 的半径也会随之改变。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "68f3c066-97dd-4fd1-81a6-5157aea744f4",
+    "qtype": "judge",
+    "question": "public class Main {\npublic static void main(String[] args) {\nInteger a = 1;\nInteger b = 1;\nSystem.out.println(a == b);\n}\n}\n由于没有用 int 而是使用了 Integer 这个包装类，a 和 b 两者没有指向同一个对象。\n因此这段 java 的输出是 false.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "04916973-35ac-4e0a-aeb9-39193576aa5d",
+    "qtype": "judge",
+    "question": "重写方法必须与被重写方法具有完全一致的返回类型，且不能降低原方法的访问权限",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "e1149bce-ef8a-485e-96b0-40c70c72a353",
+    "qtype": "judge",
+    "question": "class Parent {\nprivate void secret() { System.out.println(\"Parent secret\"); }\npublic void callSecret() {\nsecret();\n}\n}\nclass Child extends Parent {\nprivate void secret() { System.out.println(\"Child secret\"); }\n}\npublic class Test {\npublic static void main(String[] args) {\nChild c = new Child();\nc.callSecret();\n}\n}\n这段 java 代码运行后的输出是 Child secret",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "594a9ad2-a028-43eb-aff2-a114918785e7",
+    "qtype": "judge",
+    "question": "抽象类不能被实例化，所以抽象类中不能定义构造方法。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "798bd6ea-6022-43d5-9fbf-489bd91aad44",
+    "qtype": "judge",
+    "question": "DataInputStream 可以读取由 PrintWriter 创建的文本文件中的整数。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "c71d0c88-9997-4f14-aa77-8e423cb0987c",
+    "qtype": "judge",
+    "question": "Error类及其子类表示的程序错误通常是致命的，程序无法恢复，我们一般不捕获和处理它们",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "87095746-ebf8-4eee-8096-c5b7fc9b6783",
+    "qtype": "judge",
+    "question": "static 变量即使不被 transient 修饰，也不会被序列化。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "5e4c2fae-e225-410c-9c04-cc9de582d19b",
+    "qtype": "judge",
+    "question": "synchronized 关键字可以修饰一个非静态方法，当一个线程调用该对象的此方法时，会锁定这个对象本身",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "ee16e6c3-b829-4c89-999d-1096e946bf65",
+    "qtype": "judge",
+    "question": "volatile 关键字可以保证变量的原子性操作（例如 count++）。",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "eb540117-993c-4cbb-bd7e-7a35d79dd0e8",
+    "qtype": "single",
+    "question": "下列哪一项不是Java语言的特点？",
+    "options": [
+      "面向对象",
+      "指针操作",
+      "跨平台",
+      "分布式"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "bf1f2de2-4438-41c3-8828-e356b42e3008",
+    "qtype": "single",
+    "question": "执行以下代码，sum 的值是多少？\nint sum = 0;\nsum += 4.5;",
+    "options": [
+      "4.5",
+      "4",
+      "5",
+      "编译错误"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "f6c14507-adda-4baf-8178-408dd4a2713a",
+    "qtype": "single",
+    "question": "执行以下代码，输出是什么？\nclass Main{\npublic static void main(String[] args){\nString s1 =\"Zhejiang University\";\nString s2 = s1.substring(0, 7);\ns2.toUpperCase();\nSystem.out.println(s2+s1.substring(8));\n}\n}",
+    "options": [
+      "Zhejian University",
+      "ZHEJIANG University",
+      "ZHEJIAN University",
+      "ZHEJIANGUniversity"
+    ],
+    "answer_index": 0,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "d9bc1ed4-f983-49e3-9acb-877bf93b5b92",
+    "qtype": "single",
+    "question": "以下关于this关键字的说法，正确的是：",
+    "options": [
+      "可以在任何方法中使用this来引用当前对象",
+      "只能在构造方法中使用this，普通方法中不能使用",
+      "只能在实例方法和构造方法中使用this",
+      "this只能用于引用静态变量"
+    ],
+    "answer_index": 2,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "73f366fe-38fe-42fa-b1cc-9065a6592e11",
+    "qtype": "single",
+    "question": "public class Main {\npublic static void main(String[] args) {\nString s1 = \"Hello\";\nString s2 = \"Hello\";\nString s3 = \"Hel\" + \"lo\";\nString s4 = \"Hel\" + new String(\"lo\");\nString s5 = new String(\"Hello\");\nString s6 = s5.intern();\nString s7 = \"H\";\nString s8 = \"ello\";\nString s9 = s7 + s8;\n\nSystem.out.println(s1 == s2);\nSystem.out.println(s1 == s3);\nSystem.out.println(s1 == s4);\nSystem.out.println(s1 == s9);\nSystem.out.println(s4 == s5);\nSystem.out.println(s1 == s6);\n}\n}\n输出结果中有几个 true ?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "7e4d4a75-df7c-42ad-9f1b-834de76db782",
+    "qtype": "single",
+    "question": "class Base1 {\npublic int a = 1;\npublic Base1(){\ntest();\n}\npublic void test(){\nSystem.out.println(a);\n}\n}\npublic class Child extends Base1 {\npublic int a = 123;\npublic Child(){\n}\npublic void test(){\nSystem.out.println(a);\n}\npublic static void main(String[] args){\nChild c = new Child();\nc.test();\nBase1 b = c;\nSystem.out.println(b.a);\nSystem.out.println(c.a);\n}\n}\n这个代码输出的4个数字依次是（）",
+    "options": [
+      "0,123,1,123",
+      "1,123,1,123",
+      "123,123,1,123",
+      "123,123,123,123"
+    ],
+    "answer_index": 0,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "4d463bb2-805a-4849-a072-6f80fbe87331",
+    "qtype": "single",
+    "question": "下列代码的输出是：\ninterface I {\ndefault void print() {\nSystem.out.print(\"I \");\n}\n}\nclass A implements I {\npublic void print() {\nSystem.out.print(\"A \");\n}\n}\nclass B extends A implements I {\n}\npublic class Main {\npublic static void main(String[] args) {\nI obj = new B();\nobj.print();\n}\n}",
+    "options": [
+      "I",
+      "A",
+      "编译错误",
+      "运行时异常"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "b44629b8-099f-44dd-8cac-5b785a8aa1cc",
+    "qtype": "single",
+    "question": "关于 throw 和 throws，说法正确的是？",
+    "options": [
+      "throw 用于声明方法可能抛出的异常",
+      "throws 用于在方法体内抛出一个异常对象",
+      "一个方法可以 throws 多个异常，用逗号隔开",
+      "throw 后面跟的是异常类名，而不是对象"
+    ],
+    "answer_index": 2,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "740d17c4-dd72-4164-889c-4416e9f57448",
+    "qtype": "single",
+    "question": "下面哪行代码正确创建了一个用于写入二进制数据的流？",
+    "options": [
+      "new PrintWriter(\"test.txt\")",
+      "new DataOutputStream(new FileOutputStream(\"test.dat\"))",
+      "new DataOutputStream(new File(\"test.dat\"))",
+      "new FileWriter(\"test.dat\")"
+    ],
+    "answer_index": 1,
+    "source": "javaself.txt"
+  },
+  {
+    "id": "838b1111-c1a6-4419-8e32-9e1da6103ad7",
+    "qtype": "single",
+    "question": "在以下哪种情况下，线程会抛出 InterruptedException？",
+    "options": [
+      "调用 thread.interrupt() 时。",
+      "线程正在执行 synchronized 方法时被中断。",
+      "线程处于 RUNNABLE 状态时被中断。",
+      "线程因调用 sleep() 而阻塞时被中断。"
+    ],
+    "answer_index": 3,
+    "source": "javaself.txt"
+  }
+]

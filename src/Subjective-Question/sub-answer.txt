@@ -1,0 +1,99 @@
+#SUBJECTIVE
+题目要求:
+1.使用this调用已有的有参构造方法，将width与length分别设置为5和6。
+2.在Rectangle类中覆盖toString方法。按照width=实际宽度值,length=实际长度值的格式返回。
+    public Rectangle(){
+        ____1____
+    }
+    public Rectangle(int width, int length) {
+        this.width = width;
+        this.length = length;
+    }
+    public ____2____{
+        ____3____
+    }    
+#USER_ANSWER
+this(5,6);
+toString()
+return "width=" + width + ",length=" + length;
+#CORRECT_ANSWER
+this(5,6);
+String toString()
+return "width=" + this.width + ",length=" + this.length;
+#END
+
+#SUBJECTIVE
+设计一个Circle类，该类有属性radius，表示圆的半径，其默认值为1；getArea()返回该圆的面积。
+创建一个名为ComparableCircle的类，它继承自Circle类，并实现Comparable接口，在类中实现compareTo方法，使其根据面积比较两个圆。
+编写测试程序求出两个ComparableCircle实例对象的较大者。程序输出如下信息：
+Cirlce: radius = 7.0
+Area: 153.93804002589985
+Cirlce: radius = 5.0
+Area: 78.53981633974483
+c1较大
+    class Circle {
+        private double radius;
+        public ____1____{
+            radius = 1;
+        }
+        public Circle(double radius) {
+            ____2____ = radius;
+        }
+        public double getRadius() {
+            return radius;
+        }
+        public void setRadius(double radius) {
+            this.radius = radius;
+        }
+        public double getArea() {
+            ____3____
+        }
+        public String toString() {
+            ____4____
+        }
+    }
+    class ComparableCircle ____5____ Circle ____6____ Comparable<ComparableCircle> {
+        public ComparableCircle() {
+        }
+        public ComparableCircle(double radius) {
+            ____7____
+        }
+        @Override // Implement the compareTo method defined in Comparable
+        public int compareTo(____8____) {
+            if (getArea() > o.getArea())
+                return 1;
+            else if (getArea() < o.getArea())
+                return -1;
+            else
+                return 0;
+        }
+        @Override
+        public String toString() {
+            return ____9____ + "\nArea: " + getArea();
+        }
+    }
+    public class Main {
+        public static void main(String[] args) {
+            ComparableCircle c1 = new ComparableCircle(7);
+            ComparableCircle c2 = new ComparableCircle(5);
+            System.out.println(c1);
+            System.out.println(c2);
+            System.out.println(____10____?"c1较大":"c2较大");
+        }
+    }
+#USER_ANSWER
+Circle()
+this.radius
+#CORRECT_ANSWER
+Circle()
+this.radius
+return radius * radius * Math.PI;
+return "Cirlce: radius = " + radius;
+extends
+implements
+super(radius);
+ComparableCircle o
+super.toString()
+c1.compareTo(c2) > 0
+#END
+
