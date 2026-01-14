@@ -392,6 +392,10 @@ button:focus-visible {
     font-size: 24px;
   }
 
+  .page-header p {
+    font-size: 14px;
+  }
+
   .page-nav {
     width: 100%;
     justify-content: space-between;
@@ -403,7 +407,8 @@ button:focus-visible {
   }
 
   .layout {
-    padding: 24px 16px 36px;
+    grid-template-columns: 1fr;
+    padding: 20px 14px 32px;
   }
 
   .practice-controls {
@@ -415,9 +420,61 @@ button:focus-visible {
     align-items: flex-start;
   }
 
+  .question-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-button {
+    flex: 1;
+  }
+
   .index-pagination {
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
+  }
+
+  .page-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-inner {
+    padding: 16px 12px 18px;
+  }
+
+  .page-header h1 {
+    font-size: 22px;
+  }
+
+  .page-nav {
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .page-nav a {
+    width: 100%;
+  }
+
+  .card {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .question-text {
+    font-size: 15px;
+  }
+
+  .options {
+    margin: 12px 0;
+  }
+
+  .index-grid {
+    grid-template-columns: repeat(auto-fill, minmax(36px, 1fr));
   }
 }
 
