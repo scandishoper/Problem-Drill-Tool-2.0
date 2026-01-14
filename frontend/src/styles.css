@@ -9,44 +9,10 @@ body {
   margin: 0;
 }
 
-.page-header {
-  padding: 32px 24px 16px;
-  text-align: center;
-}
-
-.page-header h1 {
-  margin-bottom: 8px;
-}
-
-.header-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
-}
-
-.page-nav {
-  display: flex;
-  gap: 12px;
-}
-
-.page-nav a {
-  text-decoration: none;
-  color: #265dff;
-  background: #e9efff;
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-weight: 600;
-}
-
-.page-nav a.active {
-  background: #265dff;
-  color: #fff;
-}
-
+/* 布局容器 */
 .layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
   padding: 24px;
 }
@@ -58,15 +24,10 @@ body {
   box-shadow: 0 8px 24px rgba(27, 39, 51, 0.08);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
+/* 全局 Label 样式 */
 label {
   display: flex;
   flex-direction: column;
@@ -74,16 +35,60 @@ label {
   gap: 6px;
 }
 
+/* 修正：特定的选项 Label 需要改回水平排列 */
+.option {
+  flex-direction: row !important; /* 覆盖全局的 column 布局 */
+  align-items: flex-start;        /* 让单选框对齐文字首行 */
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.option:hover {
+  background: #f0f4ff;
+}
+
+/* 选项容器：确保选项之间垂直堆叠 */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.option input[type="radio"] {
+  margin-top: 4px;
+  flex-shrink: 0; /* 防止图标被挤压 */
+}
+
+.option-label {
+  font-weight: 700;
+  min-width: 20px;
+  flex-shrink: 0;
+}
+
+.option-text {
+  line-height: 1.5;
+  color: #333;
+}
+
+/* 输入控件 */
 textarea,
-select,
-input[type="number"],
-input[type="file"] {
+select {
   border: 1px solid #d6dbe1;
   border-radius: 8px;
   padding: 8px 10px;
   font-size: 14px;
 }
 
+textarea {
+  resize: vertical;
+  margin-bottom: 12px;
+}
+
+/* 按钮 */
 button {
   border: none;
   background: #265dff;
@@ -106,54 +111,22 @@ button:hover {
 
 .practice-area {
   border-top: 1px dashed #d6dbe1;
-  padding-top: 12px;
-}
-
-.options {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin: 12px 0;
-}
-
-.option {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.option-label {
-  font-weight: 700;
-  min-width: 22px;
-  text-align: center;
+  padding-top: 16px;
 }
 
 .form-status {
-  min-height: 18px;
+  margin-top: 12px;
   font-weight: 600;
 }
 
-.form-status.success {
-  color: #0a7c2f;
-}
-
-.form-status.error {
-  color: #c62828;
-}
+.form-status.success { color: #0a7c2f; }
+.form-status.error { color: #c62828; }
 
 .answer {
-  padding: 10px 12px;
+  margin-top: 12px;
+  padding: 12px;
   background: #f1f4ff;
   border-radius: 8px;
-}
-
-@media (min-width: 720px) {
-  .header-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
+  border-left: 4px solid #265dff;
+  font-size: 14px;
 }

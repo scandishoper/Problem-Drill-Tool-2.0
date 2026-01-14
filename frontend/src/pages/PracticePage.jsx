@@ -23,9 +23,7 @@ const PracticePage = () => {
     const typeParam = objectiveType ? `?qtype=${objectiveType}` : "";
     try {
       const response = await fetch(`${API_BASE}/api/questions/objective/random${typeParam}`);
-      if (!response.ok) {
-        throw new Error("No data");
-      }
+      if (!response.ok) throw new Error("No data");
       const [question] = await response.json();
       setObjectiveQuestion(question);
     } catch (error) {
@@ -52,9 +50,7 @@ const PracticePage = () => {
     setShowAnswer(false);
     try {
       const response = await fetch(`${API_BASE}/api/questions/subjective/random`);
-      if (!response.ok) {
-        throw new Error("No data");
-      }
+      if (!response.ok) throw new Error("No data");
       const [question] = await response.json();
       setSubjectiveQuestion(question);
     } catch (error) {
@@ -64,11 +60,12 @@ const PracticePage = () => {
   };
 
   return (
-    <>
+    <div className="layout">
+      {/* 客观题部分 */}
       <section className="card">
         <h2>客观题练习</h2>
         <div className="practice-controls">
-          <label>
+          <label className="filter-label">
             类型
             <select
               value={objectiveType}
@@ -83,6 +80,7 @@ const PracticePage = () => {
             抽取题目
           </button>
         </div>
+
         <div className="practice-area">
           {objectiveQuestion && (
             <>
@@ -98,7 +96,7 @@ const PracticePage = () => {
                       onChange={() => setSelectedIndex(index)}
                     />
                     <span className="option-label">{getOptionLabel(index)}.</span>
-                    <span>{option}</span>
+                    <span className="option-text">{option}</span>
                   </label>
                 ))}
               </div>
@@ -116,6 +114,7 @@ const PracticePage = () => {
         </div>
       </section>
 
+      {/* 主观题部分 */}
       <section className="card">
         <h2>主观题练习</h2>
         <button type="button" onClick={loadSubjective}>
@@ -135,7 +134,7 @@ const PracticePage = () => {
           {subjectiveError && <p className="form-status error">{subjectiveError}</p>}
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
