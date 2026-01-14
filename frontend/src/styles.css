@@ -114,6 +114,69 @@ button:hover {
   padding-top: 16px;
 }
 
+.question-meta {
+  font-size: 14px;
+  color: #5f6b7a;
+  margin-bottom: 8px;
+}
+
+.question-index {
+  border-top: 1px dashed #d6dbe1;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+  gap: 8px;
+}
+
+.index-button {
+  background: #eef2ff;
+  color: #1c1f23;
+  border: 1px solid #d6dbe1;
+  border-radius: 6px;
+  padding: 6px 0;
+  font-weight: 600;
+}
+
+.index-button:hover {
+  background: #e0e7ff;
+}
+
+.index-button.active {
+  background: #265dff;
+  color: #fff;
+  border-color: #265dff;
+}
+
+.index-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.page-button {
+  background: #fff;
+  color: #265dff;
+  border: 1px solid #c7d2fe;
+  padding: 6px 12px;
+}
+
+.page-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-size: 14px;
+  color: #5f6b7a;
+}
+
 .form-status {
   margin-top: 12px;
   font-weight: 600;
