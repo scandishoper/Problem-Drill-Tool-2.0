@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
-const API_BASE = "http://localhost:8000";
+const API_HOST = typeof window === "undefined" ? "localhost" : window.location.hostname;
+const API_BASE = `http://${API_HOST}:8000`;
 
 const EntryPage = () => {
   const [objectiveType, setObjectiveType] = useState("single");

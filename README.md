@@ -45,6 +45,54 @@ npm run dev
 
 浏览器访问 `http://localhost:5173`，即可录入题目并进行练习。
 
+## 局域网部署（同一内网访问）
+
+1. **启动后端（开放端口）**
+
+```bash
+cd backend
+npm install
+npm run start
+```
+
+默认会监听 `0.0.0.0:8000`，确保防火墙放行 8000 端口。
+
+2. **启动前端并允许外部访问**
+
+```bash
+cd frontend
+npm install
+npm run dev -- --host 0.0.0.0 --port 5173
+```
+
+确保防火墙放行 5173 端口。
+
+3. **前端 API 地址说明**
+
+前端默认会使用当前访问地址的主机名来请求后端（`http://当前主机:8000`），
+因此在“前后端同一台机器”部署时无需额外修改。
+
+如果后端运行在另一台机器，请手动修改：
+
+- `frontend/src/pages/PracticePage.jsx` 中的 `API_BASE`
+- `frontend/src/pages/EntryPage.jsx` 中的 `API_BASE`
+
+示例：
+
+```js
+const API_BASE = "http://192.168.1.10:8000";
+```
+
+4. **访问地址**
+
+在同一局域网的其他设备中访问：
+
+```
+http://192.168.1.10:5173
+```
+
+即可使用刷题与录题功能。
+
 ## 数据转换
 
 如需从 txt 重新生成 JSON，可运行：

@@ -17,25 +17,35 @@ def read_lines(path: Path) -> list[str]:
         return path.read_text(encoding="gbk", errors="replace").splitlines()
 
 
+def trim_empty_edges(lines: list[str]) -> list[str]:
+    start = 0
+    end = len(lines) - 1
+    while start <= end and lines[start].strip() == "":
+        start += 1
+    while end >= start and lines[end].strip() == "":
+        end -= 1
+    return lines[start : end + 1]
+
+
 def parse_objective_file(path: Path) -> list[dict]:
     lines = read_lines(path)
     questions: list[dict] = []
     index = 0
 
     while index < len(lines):
-        line = lines[index].strip()
-        if line in {"#JUDGE", "#CHOICE"}:
-            qtype = "judge" if line == "#JUDGE" else "single"
+        marker = lines[index].strip()
+        if marker in {"#JUDGE", "#CHOICE"}:
+            qtype = "judge" if marker == "#JUDGE" else "single"
             index += 1
             question_lines = []
             while index < len(lines) and lines[index].strip() != "#OPTIONS":
-                question_lines.append(lines[index].strip())
+                question_lines.append(lines[index])
                 index += 1
             index += 1
             options = []
             while index < len(lines) and lines[index].strip() != "#CORRECT":
-                option = lines[index].strip()
-                if option:
+                option = lines[index]
+                if option.strip():
                     options.append(option)
                 index += 1
             index += 1
@@ -48,7 +58,7 @@ def parse_objective_file(path: Path) -> list[dict]:
                 {
                     "id": str(uuid.uuid4()),
                     "qtype": qtype,
-                    "question": "\n".join(question_lines).strip(),
+                    "question": "\n".join(trim_empty_edges(question_lines)),
                     "options": options,
                     "answer_index": max(answer_index, 0),
                     "source": path.name,
@@ -65,8 +75,8 @@ def parse_subjective_file(path: Path) -> list[dict]:
     index = 0
 
     while index < len(lines):
-        line = lines[index].strip()
-        if line == "#SUBJECTIVE":
+        marker = lines[index].strip()
+        if marker == "#SUBJECTIVE":
             index += 1
             question_lines = []
             while index < len(lines) and lines[index].strip() not in {
@@ -74,7 +84,7 @@ def parse_subjective_file(path: Path) -> list[dict]:
                 "#USER_ANSWER",
                 "#CORRECT_ANSWER",
             }:
-                question_lines.append(lines[index].strip())
+                question_lines.append(lines[index])
                 index += 1
             answer_marker = lines[index].strip() if index < len(lines) else ""
             index += 1
@@ -85,14 +95,14 @@ def parse_subjective_file(path: Path) -> list[dict]:
                 if index < len(lines) and lines[index].strip() == "#CORRECT_ANSWER":
                     index += 1
             while index < len(lines) and lines[index].strip() != "#END":
-                answer_lines.append(lines[index].strip())
+                answer_lines.append(lines[index])
                 index += 1
             index += 1
             questions.append(
                 {
                     "id": str(uuid.uuid4()),
-                    "question": "\n".join(question_lines).strip(),
-                    "answer": "\n".join(answer_lines).strip(),
+                    "question": "\n".join(trim_empty_edges(question_lines)),
+                    "answer": "\n".join(trim_empty_edges(answer_lines)),
                     "source": path.name,
                 }
             )

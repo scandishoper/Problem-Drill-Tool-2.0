@@ -31,26 +31,38 @@ const writeJsonFile = async (filePath, payload) => {
   await fs.writeFile(filePath, JSON.stringify(payload, null, 2), "utf-8");
 };
 
+const trimEmptyEdges = (lines) => {
+  let start = 0;
+  let end = lines.length - 1;
+  while (start <= end && lines[start].trim() === "") {
+    start += 1;
+  }
+  while (end >= start && lines[end].trim() === "") {
+    end -= 1;
+  }
+  return lines.slice(start, end + 1);
+};
+
 const parseObjectiveFromText = (content, source) => {
   const lines = content.split(/\r?\n/);
   const questions = [];
   let index = 0;
 
   while (index < lines.length) {
-    const line = lines[index].trim();
-    if (line === "#JUDGE" || line === "#CHOICE") {
-      const qtype = line === "#JUDGE" ? "judge" : "single";
+    const marker = lines[index].trim();
+    if (marker === "#JUDGE" || marker === "#CHOICE") {
+      const qtype = marker === "#JUDGE" ? "judge" : "single";
       index += 1;
       const questionLines = [];
       while (index < lines.length && lines[index].trim() !== "#OPTIONS") {
-        questionLines.push(lines[index].trim());
+        questionLines.push(lines[index]);
         index += 1;
       }
       index += 1;
       const options = [];
       while (index < lines.length && lines[index].trim() !== "#CORRECT") {
-        const option = lines[index].trim();
-        if (option) options.push(option);
+        const option = lines[index];
+        if (option.trim()) options.push(option);
         index += 1;
       }
       index += 1;
@@ -69,7 +81,7 @@ const parseObjectiveFromText = (content, source) => {
       questions.push({
         id: randomUUID(),
         qtype,
-        question: questionLines.join("\n").trim(),
+        question: trimEmptyEdges(questionLines).join("\n"),
         options,
         answer_index: Math.max(answerIndex, 0),
         source,
@@ -88,15 +100,15 @@ const parseSubjectiveFromText = (content, source) => {
   let index = 0;
 
   while (index < lines.length) {
-    const line = lines[index].trim();
-    if (line === "#SUBJECTIVE") {
+    const marker = lines[index].trim();
+    if (marker === "#SUBJECTIVE") {
       index += 1;
       const questionLines = [];
       while (
         index < lines.length &&
         !["#ANSWER", "#USER_ANSWER", "#CORRECT_ANSWER"].includes(lines[index].trim())
       ) {
-        questionLines.push(lines[index].trim());
+        questionLines.push(lines[index]);
         index += 1;
       }
       const answerMarker = index < lines.length ? lines[index].trim() : "";
@@ -111,14 +123,14 @@ const parseSubjectiveFromText = (content, source) => {
       }
       const answerLines = [];
       while (index < lines.length && lines[index].trim() !== "#END") {
-        answerLines.push(lines[index].trim());
+        answerLines.push(lines[index]);
         index += 1;
       }
       index += 1;
       questions.push({
         id: randomUUID(),
-        question: questionLines.join("\n").trim(),
-        answer: answerLines.join("\n").trim(),
+        question: trimEmptyEdges(questionLines).join("\n"),
+        answer: trimEmptyEdges(answerLines).join("\n"),
         source,
       });
       continue;
@@ -328,6 +340,6 @@ app.use((error, _req, res, _next) => {
   res.status(500).json({ detail: "服务器内部错误" });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Problem Drill backend running on http://localhost:${PORT}`);
 });

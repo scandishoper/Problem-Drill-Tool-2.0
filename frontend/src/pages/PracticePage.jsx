@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 
-const API_BASE = "http://localhost:8000";
+const API_HOST = typeof window === "undefined" ? "localhost" : window.location.hostname;
+const API_BASE = `http://${API_HOST}:8000`;
 const OPTION_LABELS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const PAGE_SIZE = 10;
 const KNOWN_OBJECTIVE_SETS = ["cn-cal.txt", "cn-con.txt", "java-tot.txt", "javaself.txt"];
@@ -58,6 +59,8 @@ const PracticePage = () => {
   }, [objectiveBank, objectiveSet]);
 
   const objectiveQuestion = objectiveQuestions[questionIndex] || null;
+  const canPrevQuestion = questionIndex > 0;
+  const canNextQuestion = questionIndex < objectiveQuestions.length - 1;
   const currentPage = Math.floor(questionIndex / PAGE_SIZE);
   const totalPages = Math.ceil(objectiveQuestions.length / PAGE_SIZE);
   const pageStartIndex = currentPage * PAGE_SIZE;
@@ -79,6 +82,16 @@ const PracticePage = () => {
     if (objectiveQuestions.length === 0) return;
     const nextPage = Math.max(0, Math.min(currentPage + delta, totalPages - 1));
     selectQuestion(nextPage * PAGE_SIZE);
+  };
+
+  const goPrevQuestion = () => {
+    if (!canPrevQuestion) return;
+    selectQuestion(questionIndex - 1);
+  };
+
+  const goNextQuestion = () => {
+    if (!canNextQuestion) return;
+    selectQuestion(questionIndex + 1);
   };
 
   const checkAnswer = () => {
@@ -171,10 +184,30 @@ const PracticePage = () => {
         <div className="practice-area">
           {objectiveQuestion && (
             <>
-              <div className="question-meta">
-                第 {questionIndex + 1} / {objectiveQuestions.length} 题
+              <div className="question-header">
+                <div className="question-meta">
+                  第 {questionIndex + 1} / {objectiveQuestions.length} 题
+                </div>
+                <div className="question-nav">
+                  <button
+                    type="button"
+                    className="nav-button ghost"
+                    onClick={goPrevQuestion}
+                    disabled={!canPrevQuestion}
+                  >
+                    上一题
+                  </button>
+                  <button
+                    type="button"
+                    className="nav-button"
+                    onClick={goNextQuestion}
+                    disabled={!canNextQuestion}
+                  >
+                    下一题
+                  </button>
+                </div>
               </div>
-              <h3>{objectiveQuestion.question}</h3>
+              <h3 className="question-text">{objectiveQuestion.question}</h3>
               <div className="options">
                 {objectiveQuestion.options.map((option, index) => (
                   <label className="option" key={`${option}-${index}`}>
@@ -256,7 +289,7 @@ const PracticePage = () => {
         <div className="practice-area">
           {subjectiveQuestion && (
             <>
-              <h3>{subjectiveQuestion.question}</h3>
+              <h3 className="question-text">{subjectiveQuestion.question}</h3>
               <textarea rows="4" placeholder="请在此作答" />
               <button type="button" onClick={() => setShowAnswer(true)}>
                 查看参考答案
