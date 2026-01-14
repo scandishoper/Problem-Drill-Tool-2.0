@@ -2486,5 +2486,280 @@
     ],
     "answer_index": 3,
     "source": "javaself.txt"
+  },
+  {
+    "id": "fda6bd6f-e7ab-46dd-82d7-da10c0ff7264",
+    "qtype": "judge",
+    "question": "In a WAN, the communication subnet primarily consists of hosts and routers.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "deac165a-e170-41ae-aa38-7fee115e803f",
+    "qtype": "judge",
+    "question": "A protocol defines the rules for how a lower layer provides services to an upper layer.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "a21a0185-7639-4f74-bf21-efb92edfb1d7",
+    "qtype": "judge",
+    "question": "In optical fiber communication, single-mode fiber has a thinner core diameter than multi-mode fiber, making it more suitable for long-distance transmission.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "a63cbe76-6069-4003-adf9-23a6c9738d4b",
+    "qtype": "judge",
+    "question": "A key advantage of Manchester Encoding is its self-clocking mechanism, which allows the receiver to recover the clock signal from the signal transitions.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "3d56542f-86d4-4f5a-9c89-aacb862b1217",
+    "qtype": "judge",
+    "question": "The Piggybacking technique involves delaying outgoing acknowledgments (ACKs) so that they can be hooked onto the next outgoing data frame.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "b2ba1cd8-ff02-45f4-aca4-02f72df5e55e",
+    "qtype": "judge",
+    "question": "In the Stop-and-Wait protocol designed for a noisy channel (Protocol 3), a 1-bit sequence number (0 and 1) is sufficient to distinguish between a new frame and a retransmission.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "fe019727-2e2e-41da-909f-b92908e4e842",
+    "qtype": "judge",
+    "question": "The Hidden Terminal Problem in wireless networks occurs when a node is visible to a wireless access point (AP), but not visible to other nodes communicating with that AP.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "b1ac3985-e7fb-401a-8301-362a4880d05c",
+    "qtype": "judge",
+    "question": "Split Horizon is a technique used in Link State routing to prevent routing loops.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "1a02bbe5-06fc-47ce-ac79-5e96f81a42b3",
+    "qtype": "judge",
+    "question": "The Nagle's Algorithm is used to solve the \"Silly Window Syndrome\" by delaying the sending of small packets until enough data is accumulated or previous data is acknowledged.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "8631b6cb-4e4a-4a32-83ed-a94b753ec256",
+    "qtype": "judge",
+    "question": "With the MIME protocol, SMTP can directly transmit ASCII and non-ASCII data.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "f451969e-c480-4bbb-958f-889408c8feb6",
+    "qtype": "judge",
+    "question": "IPsec Tunnel Mode encapsulates the entire original IP packet inside a new IP packet, whereas Transport Mode only encrypts the payload.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 0,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "9b60f60e-91e7-422f-a77d-f96a320ba635",
+    "qtype": "judge",
+    "question": "A Packet Filtering Firewall inspects the content of the application data to decide whether to drop the packet.",
+    "options": [
+      "T",
+      "F"
+    ],
+    "answer_index": 1,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "f83a06a7-ebd2-4861-96c3-eba251b6cb67",
+    "qtype": "single",
+    "question": "In the OSI model, which layer is responsible for \"Routing\" and \"Congestion Control\"?",
+    "options": [
+      "Transport Layer",
+      "Data Link Layer",
+      "Network Layer",
+      "Session Layer"
+    ],
+    "answer_index": 2,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "d808f7c8-020b-40a8-905e-e13f3f351979",
+    "qtype": "single",
+    "question": "In a constellation diagram, the distance of a point from the origin represents the ______ of the signal, while the angle of the point on the circle represents the ______ of the signal.",
+    "options": [
+      "Frequency; Phase",
+      "Amplitude; Phase",
+      "Phase; Amplitude",
+      "Frequency; Amplitude"
+    ],
+    "answer_index": 1,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "fe766b9d-da7b-44a9-8b6f-b956de3de6fe",
+    "qtype": "single",
+    "question": "You are designing a Hamming Code. If you want to detect single-bit errors in a 7-bit data word (ASCII character), what is the minimum Hamming distance required for the code?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer_index": 1,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "f3703ff2-0e07-428c-bd59-4b82f5e58e0d",
+    "qtype": "single",
+    "question": "A channel has a bit rate of 4 kbps and a propagation delay of 25 msec. The frame size is 1000 bits. What is the efficiency of the Stop-and-Wait protocol? (Ignore ACK transmission time and processing time)",
+    "options": [
+      "83%",
+      "33%",
+      "50%",
+      "91%"
+    ],
+    "answer_index": 0,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "c9b74bb2-f94a-431d-bfb6-3eef9904a596",
+    "qtype": "single",
+    "question": "Why does IEEE 802.11 (Wi-Fi) use CSMA/CA instead of CSMA/CD?",
+    "options": [
+      "Because it is difficult to detect collisions while transmitting on a wireless radio interface.",
+      "Because wireless networks are full-duplex and collisions do not occur.",
+      "Because CSMA/CA is faster and has less overhead than CSMA/CD.",
+      "Because RTS/CTS packets are required for all wireless transmissions."
+    ],
+    "answer_index": 0,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "8f36a860-caf7-458f-a814-26683c15863c",
+    "qtype": "single",
+    "question": "How does a Transparent Bridge (or Switch) populate its forwarding table?",
+    "options": [
+      "By flooding packets to all ports and waiting for a reply.",
+      "By examining the Source MAC Address of incoming frames.",
+      "By examining the Destination MAC Address of incoming frames.",
+      "By using the Spanning Tree Protocol to query neighbors."
+    ],
+    "answer_index": 1,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "1043dacb-e034-4836-b72c-3d2b74dfb9ca",
+    "qtype": "single",
+    "question": "A 1-km long cable operates at 10 Mbps. The propagation speed is 200,000 km/s. What is the minimum frame size required for the CSMA/CD protocol to function correctly?",
+    "options": [
+      "50 bits",
+      "64 bits",
+      "100 bits",
+      "512 bits"
+    ],
+    "answer_index": 2,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "d14e6cef-3927-4e7c-992b-9308af441058",
+    "qtype": "single",
+    "question": "A TCP machine is sending windows of 65535 bytes over a 1 Gbps channel that has a 10 ms one-way delay. What is the maximum throughput achievable for a single connection? (Assume no errors)",
+    "options": [
+      "1 Gbps",
+      "26 Mbps",
+      "65 Mbps",
+      "3 Mbps"
+    ],
+    "answer_index": 1,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "ea3d4f2c-752f-4aae-8383-72e257f7e350",
+    "qtype": "single",
+    "question": "Which HTTP method is typically used to request the server to accept data enclosed in the request message body?",
+    "options": [
+      "GET",
+      "HEAD",
+      "POST",
+      "DELETE"
+    ],
+    "answer_index": 2,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "4ae2e489-4a2b-4eef-b5a8-d5bad2fcf3e3",
+    "qtype": "single",
+    "question": "Which DNS resource record type would you query to find the \"canonical name\" (real name) of a host if you only have its alias?",
+    "options": [
+      "NS",
+      "CNAME",
+      "MX",
+      "AAAA"
+    ],
+    "answer_index": 1,
+    "source": "cn-slides.txt"
+  },
+  {
+    "id": "14fd752e-68b3-4bf8-aadd-ad01c753807f",
+    "qtype": "single",
+    "question": "In the context of IPsec, which protocol provides confidentiality (encryption) for the data payload?",
+    "options": [
+      "AH",
+      "ESP",
+      "ICMP",
+      "DNS"
+    ],
+    "answer_index": 1,
+    "source": "cn-slides.txt"
   }
 ]

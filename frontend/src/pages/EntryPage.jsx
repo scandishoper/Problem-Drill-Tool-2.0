@@ -105,6 +105,7 @@ const EntryPage = () => {
     event.preventDefault();
     setImportStatus(null);
     let content = importContent;
+    const sourceName = importFile?.name || "txt-import";
     if (importFile) {
       content = await importFile.text();
     }
@@ -119,7 +120,7 @@ const EntryPage = () => {
         body: JSON.stringify({
           kind: importKind,
           content,
-          source: "txt-import",
+          source: sourceName,
         }),
       });
       if (!response.ok) {
